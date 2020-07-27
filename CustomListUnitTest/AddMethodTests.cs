@@ -133,12 +133,12 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void AddMethod_AddInt5_CapacityIs6()  // Arbitrary Capacity unless
+        public void AddMethod_AddInt5_CapacityIs4()  
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>();
 
-            int expected = 6;
+            int expected = 4;
             int actual;
 
             //  Act
@@ -149,12 +149,31 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void AddMethod_Add1ThroughyIs6_CapacityIs6()  // Arbitrary Capacity unless
+        public void AddMethod_Add1ThroughyIs4_CapacityIs4()  // Arbitrary Capacity unless
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>();
 
-            int expected = 6;
+            int expected = 4;
+            int actual;
+
+            //  Act
+            customList.Add(1);
+            customList.Add(2);
+            customList.Add(3);
+            customList.Add(4);
+            actual = customList.Capacity;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_Add1Throughy5_CapacityIs8()  // Arbitrary Capacity unless
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
+
+            int expected = 8;
             int actual;
 
             //  Act
@@ -163,41 +182,18 @@ namespace CustomListUnitTest
             customList.Add(3);
             customList.Add(4);
             customList.Add(5);
-            customList.Add(6);
             actual = customList.Capacity;
 
             //  Assert
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void AddMethod_Add1ThroughyIs7_CapacityIs12()  // Arbitrary Capacity unless
+        public void AddMethod_Add1ThroughyIs500_CapacityIs768()  // FIX- Capacity should double
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>();
 
-            int expected = 12;
-            int actual;
-
-            //  Act
-            customList.Add(1);
-            customList.Add(2);
-            customList.Add(3);
-            customList.Add(4);
-            customList.Add(5);
-            customList.Add(6);
-            customList.Add(7);
-            actual = customList.Capacity;
-
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_Add1ThroughyIs500_CapacityIs504()  // (500 / 6) times capacity grew + 1 (for left over 498, 499) * 6
-        {
-            //  Arrange
-            CustomList<int> customList = new CustomList<int>();
-
-            int expected = 504;
+            int expected = 768;
             int actual;
 
             //  Act
