@@ -102,7 +102,37 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void AddMethod_EmptyCustomList_CapacityIs0()  // Arbitrary Capacity unless
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
 
+            int expected = 0;
+            int actual;
+
+            //  Act
+            actual = list.Capacity;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void AddMethod_AddInt5_CapacityIs6()  // Arbitrary Capacity unless
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
+
+            int expected = 6;
+            int actual;
+
+            //  Act
+            actual = list.Capacity;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
