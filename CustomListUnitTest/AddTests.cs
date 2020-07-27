@@ -208,7 +208,24 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        //  Personal Bonus maybe
+        [TestMethod]
+        public void AddMethod_AddInt1ToCustomListTypeString_Contains1AsString() // After MVP?- Correct casting or ToString used
+        {
+            //  Arrange
+            CustomList<string> list = new CustomList<string>();
 
+            int expected = "1";
+            int actual;
+
+            //  Act
+            list.Add(1);
+            actual = list[0];
+
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
         //  Copy Past For Faster Writting
