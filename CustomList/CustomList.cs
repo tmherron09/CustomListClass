@@ -30,15 +30,15 @@ namespace CustomListClass
         {
             get
             {
-                if (i <= indexOfLast )
+                if (i <= indexOfLast && indexOfLast >= 0)  // Prevent/skip array check of negative numbers.
                 {
-                    return elements[i];  // Array will catch if it is negative/less than zero.
+                    return elements[i];
                 }
                 throw new ArgumentOutOfRangeException();
             }
             set
             {
-                if( i <= indexOfLast)
+                if (i <= indexOfLast && indexOfLast >= 0)
                 {
                     elements[i] = value;
                 }
