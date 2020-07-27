@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CustomListUnitTest
 {
     [TestClass]
-    public class AddTests
+    public class AddMethodTests
     {
         // Test Add Method Type Int
         [TestMethod]
@@ -293,22 +293,27 @@ namespace CustomListUnitTest
             //  Arrange
             CustomList<object> list = new CustomList<object>();
 
-            int expected;
+            object obj = new object();
+
+            int expected = 1;
             int actual;
 
             //  Act
+            list.Add(obj);
+            actual = list.Count;
 
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
         public void AddMethod_Add3Objects_CountIs3()
         {
             //  Arrange
             CustomList<object> list = new CustomList<object>();
 
-            Object objOne = new object();
-            Object objTwo = new object();
-            Object objThree = new object();
+            object objOne = new object();
+            object objTwo = new object();
+            object objThree = new object();
 
 
             int expected = 3;
@@ -323,7 +328,65 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
 
+        //
+        //  Object equality
+        //
+        [TestMethod]
+        public void AddMethod_AddObject_ObjectPassedAndInListAreTheSameByAssert()
+        {
+            //  Arrange
+            CustomList<object> list = new CustomList<object>();
 
+            object expected = new object();
+            object actual;
+
+            //  Act
+            list.Add(expected);
+            actual = list[0];
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_AddObject_ObjectPassedAndInListAreTheSame()
+        {
+            //  Arrange
+            CustomList<object> list = new CustomList<object>();
+
+            object obj = new object();
+            object objInList;
+
+            bool expected = true;
+            bool actual;
+
+            //  Act
+            list.Add(obj);
+            objInList = list[0];
+            actual = (obj == objInList);
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_AddObject_ObjectPassedAndInListAreTheSameByEqualTo()
+        {
+            //  Arrange
+            CustomList<object> list = new CustomList<object>();
+
+            object obj = new object();
+            object comparer = new object();  // Assuming object overrides the public override bool Equals(object ob)
+            object objInList;
+
+            bool expected = true;
+            bool actual;
+
+            //  Act
+            list.Add(obj);
+            objInList = list[0];
+            actual = (comparer.Equals(objInList) && comparer != obj);  // Am I correct that the second conidition is false beause they are not the same reference?
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
