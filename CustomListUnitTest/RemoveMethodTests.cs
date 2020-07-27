@@ -132,7 +132,20 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        //  Ensure we can't add to CustomList index even if array has capacity but list is empty.
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void RemoveMethod_RemoveAllItemsInListAddToIndex0_ThrowException()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
+            customList.Add(5);
 
+            //  Act
+            customList.Remove(5);
+            customList[0] = 10;
+
+        }
 
 
 
