@@ -48,7 +48,7 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void AddMethod_EmptyCustomList_CountIs0()
+        public void AddMethod_EmptyCustomListTypeInt_CountIs0()
         {
             //  Arrange
             CustomList<int> list = new CustomList<int>();
@@ -194,7 +194,7 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void AddMethod_EmptyCustomList_CountIs0()
+        public void AddMethod_EmptyCustomListTypeString_CountIs0()
         {
             //  Arrange
             CustomList<string> list = new CustomList<string>();
@@ -208,21 +208,77 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+
+        // Tests for objects/ class instances
+        [TestMethod]
+        public void AddMethod_EmptyCustomListTypeObject_CountIs0()
+        {
+            //  Arrange
+            CustomList<object> list = new CustomList<object>();
+
+            int expected = 0;
+            int actual;
+
+            //  Act
+            actual = list.Count;
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_Add1Object_CountIs1()
+        {
+            //  Arrange
+            CustomList<object> list = new CustomList<object>();
+
+            int expected;
+            int actual;
+
+            //  Act
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        public void AddMethod_Add3Objects_CountIs3()
+        {
+            //  Arrange
+            CustomList<object> list = new CustomList<object>();
+
+            Object objOne = new object();
+            Object objTwo = new object();
+            Object objThree = new object();
+
+
+            int expected = 3;
+            int actual;
+            //  Act
+            list.Add(objOne);
+            list.Add(objTwo);
+            list.Add(objThree);
+            actual = list.Count;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+
+
+
+
+
+
+
+
         //  Personal Bonus maybe
         //[TestMethod]
         //public void AddMethod_AddInt1ToCustomListTypeString_Contains1AsString() // After MVP?- Correct casting or ToString used
         //{
         //    //  Arrange
         //    CustomList<string> list = new CustomList<string>();
-
         //    int expected = "1";
         //    int actual;
-
         //    //  Act
         //    list.Add(1);
         //    actual = list[0];
-
-
         //    //  Assert
         //    Assert.AreEqual(expected, actual);
         //}
@@ -232,17 +288,32 @@ namespace CustomListUnitTest
         //{
         //    //  Arrange
         //    CustomList<int> list = new CustomList<int>();
-
         //    int expected = 5;
         //    int actual;
-
         //    //  Act
         //    list.Add(1, 2, 3, 4, 5);
         //    actual = list.Count;
-
         //    //  Assert
         //    Assert.AreEqual(expected, actual);
         //}
+        //  Additional to go with Above
+        //[TestMethod]
+        //public void AddMethod_IntArrayOf5Ints_CountIs5()
+        //{
+        //    //  Arrange
+        //    CustomList<int> list = new CustomList<int>();
+        //    int[] intArray = new int[] { 1, 2, 3, 4, 5 };
+        //    int expected = 5;
+        //    int actual;
+        //    //  Act
+        //    list.Add(intArray);
+        //    actual = list.Count;
+        //    //  Assert
+        //    Assert.AreEqual(expected, actual);
+        //}
+
+
+
 
         //  Copy Past For Faster Writting
         //[TestMethod]
