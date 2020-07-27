@@ -132,7 +132,6 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
-
         [TestMethod]
         public void AddMethod_AddInt5_CapacityIs6()  // Arbitrary Capacity unless
         {
@@ -221,6 +220,7 @@ namespace CustomListUnitTest
             //  Act
             list.Add("Hello Exception");
         }
+        
         // Test Add Method Type String
         [TestMethod]
         public void AddMethod_AddOneString_CountIsOne()
@@ -271,7 +271,7 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
-
+        
         // Tests for objects/ class instances
         [TestMethod]
         public void AddMethod_EmptyCustomListTypeObject_CountIs0()
@@ -327,6 +327,21 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void AddMethod_AddNullObject_CountIs1()
+        {
+            //  Arrange
+            CustomList<object> list = new CustomList<object>();
+            object obj = null;
+            int expected = 1;
+            int actual;
+            //  Act
+            list.Add(obj);
+            actual = list.Count;
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+
 
         //
         //  Object equality
