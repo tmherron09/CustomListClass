@@ -62,61 +62,61 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
-        //[TestMethod]
-        //public void AddMethod_Add1Int6_IndexAt0Is6()
-        //{
-        //    //  Arrange
-        //    CustomList<int> customList = new CustomList<int>();
+        [TestMethod]
+        public void AddMethod_Add1Int6_IndexAt0Is6()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
 
-        //    int expected = 6;
-        //    int actual;
+            int expected = 6;
+            int actual;
 
-        //    //  Act
-        //    customList.Add(6);
-        //    actual = customList[0];
+            //  Act
+            customList.Add(6);
+            actual = customList[0];
 
-        //    //  Assert
-        //    Assert.AreEqual(expected, actual);
-        //}
-        //[TestMethod]
-        //public void AddMethod_Add1Through5_Index0Is1()
-        //{
-        //    //  Arrange
-        //    CustomList<int> customList = new CustomList<int>();
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_Add1Through5_Index0Is1()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
 
-        //    int expected = 1;
-        //    int actual;
+            int expected = 1;
+            int actual;
 
-        //    //  Act
-        //    customList.Add(1);
-        //    customList.Add(2);
-        //    customList.Add(3);
-        //    customList.Add(4);
-        //    customList.Add(5);
-        //    actual = customList[0];
-        //    //  Assert
-        //    Assert.AreEqual(expected, actual);
-        //}
-        //[TestMethod]
-        //public void AddMethod_Add1Through5_Index4Is5()
-        //{
-        //    //  Arrange
-        //    CustomList<int> customList = new CustomList<int>();
+            //  Act
+            customList.Add(1);
+            customList.Add(2);
+            customList.Add(3);
+            customList.Add(4);
+            customList.Add(5);
+            actual = customList[0];
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_Add1Through5_Index4Is5()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
 
-        //    int expected = 5;
-        //    int actual;
+            int expected = 5;
+            int actual;
 
-        //    //  Act
-        //    customList.Add(1);
-        //    customList.Add(2);
-        //    customList.Add(3);
-        //    customList.Add(4);
-        //    customList.Add(5);
-        //    actual = customList[4];
+            //  Act
+            customList.Add(1);
+            customList.Add(2);
+            customList.Add(3);
+            customList.Add(4);
+            customList.Add(5);
+            actual = customList[4];
 
-        //    //  Assert
-        //    Assert.AreEqual(expected, actual);
-        //}
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
         [TestMethod]
         public void AddMethod_EmptyCustomList_CapacityIs0()  // Arbitrary Capacity unless
         {

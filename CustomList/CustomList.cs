@@ -8,6 +8,7 @@ namespace CustomListClass
         private T[] elements;
         private int count;
         private int startCapacity;
+        
 
         public int Count { get { return count; } }
         public int Capacity
@@ -17,6 +18,32 @@ namespace CustomListClass
                 return elements.Length;
             }
 
+        }
+        public int indexOfLast // If -1, Custom List is Empty
+        { 
+            get
+            {
+                return Count - 1;
+            }
+        }
+        public T this[int i]
+        {
+            get
+            {
+                if (i <= indexOfLast )
+                {
+                    return elements[i];  // Array will catch if it is negative/less than zero.
+                }
+                throw new ArgumentOutOfRangeException();
+            }
+            set
+            {
+                if( i <= indexOfLast)
+                {
+                    elements[i] = value;
+                }
+                throw new ArgumentOutOfRangeException();
+            }
         }
 
         public CustomList()
@@ -41,15 +68,11 @@ namespace CustomListClass
                 elements.CopyTo(newElements, 0);
                 elements = newElements;
             }
-
-
-
-            elements[count - 1] = value;
+            elements[indexOfLast] = value;
         }
 
         public bool Remove(T value)
         {
-            int indexLocation = 0;
             for (int i = 0; i < Count; i++)
             {
                 if (elements[i].Equals(value))
