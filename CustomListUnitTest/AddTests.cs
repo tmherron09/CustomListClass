@@ -209,24 +209,40 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
         //  Personal Bonus maybe
-        [TestMethod]
-        public void AddMethod_AddInt1ToCustomListTypeString_Contains1AsString() // After MVP?- Correct casting or ToString used
-        {
-            //  Arrange
-            CustomList<string> list = new CustomList<string>();
+        //[TestMethod]
+        //public void AddMethod_AddInt1ToCustomListTypeString_Contains1AsString() // After MVP?- Correct casting or ToString used
+        //{
+        //    //  Arrange
+        //    CustomList<string> list = new CustomList<string>();
 
-            int expected = "1";
-            int actual;
+        //    int expected = "1";
+        //    int actual;
 
-            //  Act
-            list.Add(1);
-            actual = list[0];
+        //    //  Act
+        //    list.Add(1);
+        //    actual = list[0];
 
 
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
+        //    //  Assert
+        //    Assert.AreEqual(expected, actual);
+        //}
+        // After MVP- Test AddMethod use of Args[] to Differentiate from List<T> -   .Add(T value)     .Add(T[] args)
+        //[TestMethod]
+        //public void AddMethod_5IntParameters_CountIs5()
+        //{
+        //    //  Arrange
+        //    CustomList<int> list = new CustomList<int>();
 
+        //    int expected = 5;
+        //    int actual;
+
+        //    //  Act
+        //    list.Add(1, 2, 3, 4, 5);
+        //    actual = list.Count;
+
+        //    //  Assert
+        //    Assert.AreEqual(expected, actual);
+        //}
 
         //  Copy Past For Faster Writting
         //[TestMethod]
