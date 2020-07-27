@@ -80,7 +80,23 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void RemoveMethod_Remove8FromListOf1Through5_ReturnsFalse()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
+            for (int i = 1; i <= 5; i++)
+            {
+                customList.Add(i);
+            }
+            bool expected = false;
+            bool actual;
+            //  Act
 
+            actual = customList.Remove(8);
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
