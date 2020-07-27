@@ -143,8 +143,41 @@ namespace CustomListUnitTest
             //  Act
             list.Add("Hello Exception");
         }
+        // Test Add Method Type String
+        [TestMethod]
+        public void AddMethod_AddOneString_CountIsOne()
+        {
+            //  Arrange
+            CustomList<string> list = new CustomList<string>();
 
+            int expected = 1;
+            int actual;
 
+            //  Act
+            list.Add("Hello Custom World");
+            actual = list.Count;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_AddThreeString_CountIsThree()
+        {
+            //  Arrange
+            CustomList<string> list = new CustomList<string>();
+
+            int expected = 3;
+            int actual;
+
+            //  Act
+            list.Add("Hello Custom World");
+            list.Add("This bad boy can fit so many tests.");
+            list.Add("Is this a Butterfly?");
+            actual = list.Count;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
