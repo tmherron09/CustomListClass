@@ -28,7 +28,24 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
-       
+        // My first thought was redundant based on how Last<T>.Remove() calls IndexOf() once. However, if we didn't know that, like here not knowing how we'll implement, safe to check.
+        [TestMethod]
+        public void RemoveMethod_RemoveInt5FromCustomListOfFive5s_CountIs4()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
+            for (int i = 0; i <= 4; i++)
+            {
+                customList.Add(5);
+            }
+            int expected = 4;
+            int actual;
+            //  Act
+            customList.Remove(5);
+            actual = customList.Count;
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
