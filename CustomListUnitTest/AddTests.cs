@@ -143,6 +143,28 @@ namespace CustomListUnitTest
             int actual;
 
             //  Act
+            list.Add(5);
+            actual = list.Capacity;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void AddMethod_Add1ThroughyIs6_CapacityIs6()  // Arbitrary Capacity unless
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
+
+            int expected = 6;
+            int actual;
+
+            //  Act
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
+            list.Add(6);
             actual = list.Capacity;
 
             //  Assert
