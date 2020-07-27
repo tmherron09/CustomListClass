@@ -13,15 +13,15 @@ namespace CustomListUnitTest
         public void AddMethod_AddInt10_CountIsOne()
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int>customList = new CustomList<int>();
 
             int expected = 1;
             int actual;
 
             //  Act
 
-            list.Add(10);
-            actual = list.Count;
+           customList.Add(10);
+            actual =customList.Count;
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -30,19 +30,19 @@ namespace CustomListUnitTest
         public void AddMethod_Add5Ints_CountIsFive()
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int>customList = new CustomList<int>();
 
             int expected = 5;
             int actual;
 
             //  Act
 
-            list.Add(10);
-            list.Add(12);
-            list.Add(0);
-            list.Add(5);
-            list.Add(7);
-            actual = list.Count;
+           customList.Add(10);
+           customList.Add(12);
+           customList.Add(0);
+           customList.Add(5);
+           customList.Add(7);
+            actual =customList.Count;
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -51,13 +51,13 @@ namespace CustomListUnitTest
         public void AddMethod_EmptyCustomListTypeInt_CountIs0()
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int>customList = new CustomList<int>();
 
             int expected = 0;
             int actual;
 
             //  Act
-            actual = list.Count;
+            actual =customList.Count;
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -66,14 +66,14 @@ namespace CustomListUnitTest
         public void AddMethod_Add1Int6_IndexAt0Is6()
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int>customList = new CustomList<int>();
 
             int expected = 6;
             int actual;
 
             //  Act
-            list.Add(6);
-            actual = list[0];
+           customList.Add(6);
+            actual =customList[0];
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -82,18 +82,18 @@ namespace CustomListUnitTest
         public void AddMethod_Add1Through5_Index0Is1()
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int>customList = new CustomList<int>();
 
             int expected = 1;
             int actual;
 
             //  Act
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
-            list.Add(5);
-            actual = list[0];
+           customList.Add(1);
+           customList.Add(2);
+           customList.Add(3);
+           customList.Add(4);
+           customList.Add(5);
+            actual =customList[0];
             //  Assert
             Assert.AreEqual(expected, actual);
         }
@@ -101,18 +101,18 @@ namespace CustomListUnitTest
         public void AddMethod_Add1Through5_Index4Is5()
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int>customList = new CustomList<int>();
 
             int expected = 5;
             int actual;
 
             //  Act
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
-            list.Add(5);
-            actual = list[4];
+           customList.Add(1);
+           customList.Add(2);
+           customList.Add(3);
+           customList.Add(4);
+           customList.Add(5);
+            actual =customList[4];
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -121,13 +121,13 @@ namespace CustomListUnitTest
         public void AddMethod_EmptyCustomList_CapacityIs0()  // Arbitrary Capacity unless
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int>customList = new CustomList<int>();
 
             int expected = 0;
             int actual;
 
             //  Act
-            actual = list.Capacity;
+            actual =customList.Capacity;
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -136,14 +136,14 @@ namespace CustomListUnitTest
         public void AddMethod_AddInt5_CapacityIs6()  // Arbitrary Capacity unless
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int> customList = new CustomList<int>();
 
             int expected = 6;
             int actual;
 
             //  Act
-            list.Add(5);
-            actual = list.Capacity;
+            customList.Add(5);
+            actual = customList.Capacity;
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -152,19 +152,19 @@ namespace CustomListUnitTest
         public void AddMethod_Add1ThroughyIs6_CapacityIs6()  // Arbitrary Capacity unless
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int> customList = new CustomList<int>();
 
             int expected = 6;
             int actual;
 
             //  Act
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
-            list.Add(5);
-            list.Add(6);
-            actual = list.Capacity;
+            customList.Add(1);
+            customList.Add(2);
+            customList.Add(3);
+            customList.Add(4);
+            customList.Add(5);
+            customList.Add(6);
+            actual = customList.Capacity;
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -173,20 +173,20 @@ namespace CustomListUnitTest
         public void AddMethod_Add1ThroughyIs7_CapacityIs12()  // Arbitrary Capacity unless
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int> customList = new CustomList<int>();
 
             int expected = 12;
             int actual;
 
             //  Act
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
-            list.Add(5);
-            list.Add(6);
-            list.Add(7);
-            actual = list.Capacity;
+            customList.Add(1);
+            customList.Add(2);
+            customList.Add(3);
+            customList.Add(4);
+            customList.Add(5);
+            customList.Add(6);
+            customList.Add(7);
+            actual = customList.Capacity;
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -195,7 +195,7 @@ namespace CustomListUnitTest
         public void AddMethod_Add1ThroughyIs500_CapacityIs504()  // (500 / 6) times capacity grew + 1 (for left over 498, 499) * 6
         {
             //  Arrange
-            CustomList<int> list = new CustomList<int>();
+            CustomList<int> customList = new CustomList<int>();
 
             int expected = 504;
             int actual;
@@ -203,205 +203,24 @@ namespace CustomListUnitTest
             //  Act
             for(int i = 1; i <= 500; i++)
             {
-                list.Add(i);
+                customList.Add(i);
             }
-            actual = list.Capacity;
-
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        [ExpectedException(typeof(InvalidCastException))]  // According to intellisense throws when can't cast string to int?
-        public void AddMethod_AddStringToCustomListTypeInt_ThrowException()  //Fail or throw exception?
-        {
-            //  Arrange
-            CustomList<int> list = new CustomList<int>();
-
-            //  Act
-            list.Add("Hello Exception");
-        }
-        
-        // Test Add Method Type String
-        [TestMethod]
-        public void AddMethod_AddOneString_CountIsOne()
-        {
-            //  Arrange
-            CustomList<string> list = new CustomList<string>();
-
-            int expected = 1;
-            int actual;
-
-            //  Act
-            list.Add("Hello Custom World");
-            actual = list.Count;
-
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_AddThreeString_CountIsThree()
-        {
-            //  Arrange
-            CustomList<string> list = new CustomList<string>();
-
-            int expected = 3;
-            int actual;
-
-            //  Act
-            list.Add("Hello Custom World");
-            list.Add("This bad boy can fit so many tests.");
-            list.Add("Is this a Butterfly?");
-            actual = list.Count;
-
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_EmptyCustomListTypeString_CountIs0()
-        {
-            //  Arrange
-            CustomList<string> list = new CustomList<string>();
-
-            int expected = 0;
-            int actual;
-
-            //  Act
-            actual = list.Count;
+            actual = customList.Capacity;
 
             //  Assert
             Assert.AreEqual(expected, actual);
         }
         
-        // Tests for objects/ class instances
-        [TestMethod]
-        public void AddMethod_EmptyCustomListTypeObject_CountIs0()
-        {
-            //  Arrange
-            CustomList<object> list = new CustomList<object>();
-
-            int expected = 0;
-            int actual;
-
-            //  Act
-            actual = list.Count;
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_Add1Object_CountIs1()
-        {
-            //  Arrange
-            CustomList<object> list = new CustomList<object>();
-
-            object obj = new object();
-
-            int expected = 1;
-            int actual;
-
-            //  Act
-            list.Add(obj);
-            actual = list.Count;
-
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_Add3Objects_CountIs3()
-        {
-            //  Arrange
-            CustomList<object> list = new CustomList<object>();
-
-            object objOne = new object();
-            object objTwo = new object();
-            object objThree = new object();
+        
+       
 
 
-            int expected = 3;
-            int actual;
-            //  Act
-            list.Add(objOne);
-            list.Add(objTwo);
-            list.Add(objThree);
-            actual = list.Count;
-
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_AddNullObject_CountIs1()
-        {
-            //  Arrange
-            CustomList<object> list = new CustomList<object>();
-            object obj = null;
-            int expected = 1;
-            int actual;
-            //  Act
-            list.Add(obj);
-            actual = list.Count;
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
 
 
-        //
-        //  Object equality
-        //
-        [TestMethod]
-        public void AddMethod_AddObject_ObjectPassedAndInListAreTheSameByAssert()
-        {
-            //  Arrange
-            CustomList<object> list = new CustomList<object>();
 
-            object expected = new object();
-            object actual;
 
-            //  Act
-            list.Add(expected);
-            actual = list[0];
 
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_AddObject_ObjectPassedAndInListAreTheSame()
-        {
-            //  Arrange
-            CustomList<object> list = new CustomList<object>();
 
-            object obj = new object();
-            object objInList;
-
-            bool expected = true;
-            bool actual;
-
-            //  Act
-            list.Add(obj);
-            objInList = list[0];
-            actual = (obj == objInList);
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
-        [TestMethod]
-        public void AddMethod_AddObject_ObjectPassedAndInListAreTheSameByEqualTo()
-        {
-            //  Arrange
-            CustomList<object> list = new CustomList<object>();
-
-            object obj = new object();
-            object comparer = new object();  // Assuming object overrides the public override bool Equals(object ob)
-            object objInList;
-
-            bool expected = true;
-            bool actual;
-
-            //  Act
-            list.Add(obj);
-            objInList = list[0];
-            actual = (comparer.Equals(objInList) && comparer != obj);  // Am I correct that the second conidition is false beause they are not the same reference?
-
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
 
 
 
