@@ -171,6 +171,28 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
+        public void AddMethod_Add1ThroughyIs7_CapacityIs12()  // Arbitrary Capacity unless
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
+
+            int expected = 12;
+            int actual;
+
+            //  Act
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
+            list.Add(6);
+            list.Add(7);
+            actual = list.Capacity;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
         [ExpectedException(typeof(InvalidCastException))]  // According to intellisense throws when can't cast string to int?
         public void AddMethod_AddStringToCustomListTypeInt_ThrowException()  //Fail or throw exception?
         {
