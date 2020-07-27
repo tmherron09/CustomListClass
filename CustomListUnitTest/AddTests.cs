@@ -133,7 +133,16 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        [ExpectedException(typeof(InvalidCastException))]  // According to intellisense throws when can't cast string to int?
+        public void AddMethod_AddStringToCustomListTypeInt_ThrowException()  //Fail or throw exception?
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
 
+            //  Act
+            list.Add("Hello Exception");
+        }
 
 
 
