@@ -10,11 +10,11 @@ namespace CustomListClass
         private int startCapacity;
 
         public int Count { get { return count; } }
-        public int Capacity 
-        { 
-            get 
-            { 
-                return elements.Length; 
+        public int Capacity
+        {
+            get
+            {
+                return elements.Length;
             }
 
         }
@@ -29,12 +29,12 @@ namespace CustomListClass
         public void Add(T value)
         {
             count++;
-            if(Capacity == 0)
+            if (Capacity == 0)
             {
                 T[] newElements = new T[startCapacity];
                 elements = newElements;
             }
-            else if(count > Capacity)
+            else if (count > Capacity)
             {
                 int newLength = elements.Length * 2;
                 T[] newElements = new T[newLength];
@@ -42,16 +42,30 @@ namespace CustomListClass
                 elements = newElements;
             }
 
-            
+
 
             elements[count - 1] = value;
         }
 
         public bool Remove(T value)
         {
-            throw new NotImplementedException();
+            int indexLocation = 0;
+            for (int i = 0; i < Count; i++)
+            {
+                if (elements[i].Equals(value))
+                {
+                    while (i != Count - 1)
+                    {
+                        elements[i] = elements[i + 1];
+                        i++;
+                    }
+                    elements[i] = default(T);
+                    count--;
+                    return true;
+                }
+            }
+            return false;
         }
-
-
     }
 }
+
