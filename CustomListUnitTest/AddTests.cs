@@ -63,7 +63,25 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void AddMethod_Add1Through5_Index0Is1()
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
 
+            int expected = 1;
+            int actual;
+
+            //  Act
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+            list.Add(5);
+            actual = list[0];
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
