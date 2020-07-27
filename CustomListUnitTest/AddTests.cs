@@ -26,7 +26,27 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
-        
+        [TestMethod]
+        public void AddMethod_Add5Ints_CountIsFive()
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
+
+            int expected = 5;
+            int actual;
+
+            //  Act
+
+            list.Add(10);
+            list.Add(12);
+            list.Add(0);
+            list.Add(5);
+            list.Add(7);
+            actual = list.Count;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
