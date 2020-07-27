@@ -48,6 +48,21 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
+        public void AddMethod_EmptyCustomList_CountIs0()
+        {
+            //  Arrange
+            CustomList<int> list = new CustomList<int>();
+
+            int expected = 0;
+            int actual;
+
+            //  Act
+            actual = list.Count;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
         public void AddMethod_Add1Int6_IndexAt0Is6()
         {
             //  Arrange
@@ -178,7 +193,21 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void AddMethod_EmptyCustomList_CountIs0()
+        {
+            //  Arrange
+            CustomList<string> list = new CustomList<string>();
 
+            int expected = 0;
+            int actual;
+
+            //  Act
+            actual = list.Count;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
