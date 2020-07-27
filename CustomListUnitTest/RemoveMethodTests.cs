@@ -114,7 +114,24 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
-
+        //  Not sure if redundant. We know we aren't reducing capacity, but should we check that we aren't?
+        [TestMethod]
+        public void RemoveMethod_Remove4FromListOf1Through7_CapacityIs12()  // CustomList capacitySize is 6
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>();
+            for (int i = 1; i <= 7; i++)
+            {
+                customList.Add(i);
+            }
+            int expected = 12;
+            int actual;
+            //  Act
+            customList.Remove(7);
+            actual = customList.Capacity;
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
