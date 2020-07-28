@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace CustomListClass
 {
@@ -89,6 +90,22 @@ namespace CustomListClass
             }
             return false;
         }
+
+
+
+        public override string ToString()
+        {
+
+            // Set initial capacity to 10 per item
+            StringBuilder sb = new StringBuilder(Count * 10);
+            sb.Append(elements[0]);
+
+
+
+            return sb.ToString();
+        }
+
+
     }
 }
 
