@@ -122,12 +122,45 @@ namespace CustomListClass
 
         public static CustomList<T> operator +(CustomList<T> first, CustomList<T> second)
         {
+            CustomList<T> sum = new CustomList<T>(first.Count + second.Count);
+
+            for(int i = 0; i < first.Count; i++)
+            {
+                sum.Add(first[i]);
+            }
+            for (int i = 0; i < second.Count; i++)
+            {
+                sum.Add(second[i]);
+            }
 
 
-
-            throw new NotImplementedException();
+            return sum;
         }
 
+        /// <summary>
+        /// Determines whether the specified object as a CustomList is equal to this instance.
+        /// </summary>
+        /// <param name="value">The <see cref="CustomList{T}" /> to compare with this instance.</param>
+        /// <returns>
+        ///   True if the specified <see cref="CustomList{T}" /> items in elements array are equal to at the same indexs of this instance; Else, false 
+        /// </returns>
+        public override bool Equals(object value)
+        {
+            CustomList<T> customList = value as CustomList<T>;
+            
+            if( Count != customList.Count)
+            {
+                return false;
+            }
+            for(int i = 0; i < customList.Count; i++)
+            {
+                if(!elements[i].Equals(customList[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
 
     }
