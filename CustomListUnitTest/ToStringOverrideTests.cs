@@ -45,7 +45,24 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void ToStringMethod_EmptyCustomListToString_StringOfEmptyCustomList()
+        {
+            //  Arrange
+            CustomList<string> customList = new CustomList<string>();
 
+            string wordOne = "One";
+            string wordTwo = "Two";
+            string expected = "One, Two";
+            string actual;
+            //  Act
+            customList.Add(wordOne);
+            customList.Add(wordTwo);
+            actual = customList.ToString();
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 
