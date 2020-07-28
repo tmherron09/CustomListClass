@@ -11,12 +11,25 @@ namespace CustomListClass
     /// <typeparam name="T">Type of Item in CustomList</typeparam>
     public class CustomList<T> : IEnumerator, IEnumerable
     {
+        /// <summary>
+        /// Inner Array of <see cref="CustomList{T}" />
+        /// </summary>
         private T[] elements;
+        /// <summary>
+        /// Number of Items in <see cref="CustomList{T}" />
+        /// </summary>
         private int count;
+        /// <summary>
+        /// Default capacity of a non-empty CustomList
+        /// </summary>
         private const int startCapacity = 4;
-        int position = -1; // for iteration
-
+        /// <summary>
+        /// Public readonly value of numer of items in <see cref="CustomList{T}" />
+        /// </summary>
         public int Count { get { return count; } }
+        /// <summary>
+        /// Publicly accessible length of iternal array elements
+        /// </summary>
         public int Capacity
         {
             get
@@ -25,7 +38,10 @@ namespace CustomListClass
             }
 
         }
-        public int indexOfLast // If -1, Custom List is Empty
+        /// <summary>
+        /// The index position of the last element in the array.
+        /// </summary>
+        public int IndexOfLast // If -1, Custom List is Empty
         {
             get
             {
@@ -36,7 +52,7 @@ namespace CustomListClass
         {
             get
             {
-                if (i <= indexOfLast && indexOfLast >= 0)  // Prevent/skip array check of negative numbers.
+                if (i <= IndexOfLast && IndexOfLast >= 0)  // Prevent/skip array check of negative numbers.
                 {
                     return elements[i];
                 }
@@ -44,25 +60,34 @@ namespace CustomListClass
             }
             set
             {
-                if (i <= indexOfLast && indexOfLast >= 0)
+                if (i <= IndexOfLast && IndexOfLast >= 0)
                 {
                     elements[i] = value;
                 }
                 throw new ArgumentOutOfRangeException();
             }
         }
-
+        /// <summary>
+        /// Initializes a new instance of <see cref="CustomList{T}" /> Class
+        /// </summary>
         public CustomList()
         {
             elements = new T[0];
             count = 0;
         }
+        /// <summary>
+        /// Initializes a new instance of <see cref="CustomList{T}" /> Class that is empty and has specified starting capacity. 
+        /// </summary>
+        /// <param name="capacity">Value to initialize capacity.</param>
         public CustomList(int capacity)
         {
             elements = new T[capacity];
             count = 0;
         }
-
+        /// <summary>
+        /// Method to add a <see cref="CustomList{T}" /> to end of <paramref name="this"/> inner array.
+        /// </summary>
+        /// <param name="value"><see cref="CustomList{T}" /> to Add to end of inner array.</param>
         public void Add(T value)
         {
             count++;
@@ -78,9 +103,13 @@ namespace CustomListClass
                 elements.CopyTo(newElements, 0);
                 elements = newElements;
             }
-            elements[indexOfLast] = value;
+            elements[IndexOfLast] = value;
         }
-
+        /// <summary>
+        /// Removes the first T value matching object from the <see cref="CustomList{T}" />.
+        /// </summary>
+        /// <param name="value">The value of the matching object to remove from the instance of <see cref="CustomList{T}" />.</param>
+        /// <returns>Return true if an Item&lt;T&gt; with value successfully removed. Returns false if no object with matching value is found within CustomList&lt;T&gt;.</returns>
         public bool Remove(T value)
         {
             for (int i = 0; i < Count; i++)
@@ -99,6 +128,11 @@ namespace CustomListClass
             }
             return false;
         }
+        /// <summary>
+        /// Zips together a second <see cref="CustomList{T}" />. New <see cref="CustomList{T}" /> will contain <paramref name="this"/> first item in inner array, proceeded by <paramref name="listB"/> first item in inner array and repeat until all items have been added to new <see cref="CustomList{T}" />. Trailing items will be added to returned <see cref="CustomList{T}" />.
+        /// </summary>
+        /// <param name="listB"><see cref="CustomList{T}" /> to Zip</param>
+        /// <returns>New <see cref="CustomList{T}" /> of <paramref name="this"/> zipped with <paramref name="listB"/> </returns>
         public CustomList<T> Zip(CustomList<T> listB)
         {
             CustomList<T> zipped = new CustomList<T>(Count + listB.Count);
@@ -118,8 +152,10 @@ namespace CustomListClass
 
             return zipped;
         }
-
-
+        /// <summary>
+        /// Converts contents of <see cref="CustomList{T}" /> to string. String format includes $"elements[0], elements[1], elements[3]..." for all items.
+        /// </summary>
+        /// <returns>String of "elements[0], elements[1], elements[3]..."</returns>
         public override string ToString()
         {
             if (Count == 0)
@@ -142,7 +178,12 @@ namespace CustomListClass
 
             return sb.ToString();
         }
-
+        /// <summary>
+        /// Defines + operator overload for adding two <see cref="CustomList{T}" />.
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns>New <see cref="CustomList{T}" /> of both inner arrays joined.</returns>
         public static CustomList<T> operator +(CustomList<T> first, CustomList<T> second)
         {
             CustomList<T> sum = new CustomList<T>(first.Count + second.Count);
@@ -159,32 +200,12 @@ namespace CustomListClass
 
             return sum;
         }
-
         /// <summary>
-        /// Determines whether the specified object as a CustomList is equal to this instance.
+        /// Defines - operator overload for subtracting two <see cref="CustomList{T}" />.
         /// </summary>
-        /// <param name="value">The <see cref="CustomList{T}" /> to compare with this instance.</param>
-        /// <returns>
-        ///   True if the specified <see cref="CustomList{T}" /> items in elements array are equal to at the same indexs of this instance; Else, false 
-        /// </returns>
-        public override bool Equals(object value)
-        {
-            CustomList<T> customList = value as CustomList<T>;
-
-            if (Count != customList.Count)
-            {
-                return false;
-            }
-            for (int i = 0; i < customList.Count; i++)
-            {
-                if (!elements[i].Equals(customList[i]))
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
+        /// <param name="minuend"><see cref="CustomList{T}" /> being subtracted from.</param>
+        /// <param name="subtrahend"><see cref="CustomList{T}" /> to subtract from <paramref name="minuend"/> </param>
+        /// <returns></returns>
         public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
         {
 
@@ -213,8 +234,32 @@ namespace CustomListClass
 
             return difference;
         }
+        /// <summary>
+        /// Determines whether the specified object as a <see cref="CustomList{T}" /> is equal to this instance.
+        /// </summary>
+        /// <param name="value">The <see cref="CustomList{T}" /> to compare with this instance.</param>
+        /// <returns>
+        ///   True if the specified <see cref="CustomList{T}" /> items in elements array are equal to at the same indexs of this instance; Else, false 
+        /// </returns>
+        public override bool Equals(object value)
+        {
+            CustomList<T> customList = value as CustomList<T>;
 
+            if (Count != customList.Count)
+            {
+                return false;
+            }
+            for (int i = 0; i < customList.Count; i++)
+            {
+                if (!elements[i].Equals(customList[i]))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
+        int position = -1; // for iteration
         // IEnumerator and IEnumerable required methods
         public IEnumerator GetEnumerator()
         {

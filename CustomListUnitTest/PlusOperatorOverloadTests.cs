@@ -44,7 +44,6 @@ namespace CustomListUnitTest
             {
                 hasPassed = false;
             }
-
             for (int i = 0; i < expectedSum.Count; i++)
             {
                 if (expectedSum[i] != actualSum[i])
@@ -52,8 +51,6 @@ namespace CustomListUnitTest
                     hasPassed = false;
                 }
             }
-
-
             // Assert
             Assert.IsTrue(hasPassed);
         }
@@ -83,7 +80,6 @@ namespace CustomListUnitTest
             // Act
             actual = odd + even;
 
-
             // Assert
             Assert.AreEqual(expected, actual);
         }
@@ -97,10 +93,8 @@ namespace CustomListUnitTest
             CustomList<int> expected = new CustomList<int>();
             CustomList<int> actual;
 
-
             //  Act
             actual = first + second;
-
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -121,7 +115,6 @@ namespace CustomListUnitTest
 
             int expected = 6;
             int actual;
-            
 
             // Act
             CustomList<int> result = odd + even;

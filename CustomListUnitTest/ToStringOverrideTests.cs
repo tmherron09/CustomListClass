@@ -20,6 +20,7 @@ namespace CustomListUnitTest
             int word = 1;
             string expected = "1";
             string actual;
+
             //  Act
             customList.Add(word);
             actual = customList.ToString();
@@ -37,6 +38,7 @@ namespace CustomListUnitTest
             string wordTwo = "Two";
             string expected = "One, Two";
             string actual;
+
             //  Act
             customList.Add(wordOne);
             customList.Add(wordTwo);
@@ -55,6 +57,7 @@ namespace CustomListUnitTest
             string wordTwo = "Two";
             string expected = "One, Two";
             string actual;
+
             //  Act
             customList.Add(wordOne);
             customList.Add(wordTwo);
@@ -74,18 +77,17 @@ namespace CustomListUnitTest
 
             string expected = "One, Two";
             string actual;
+
             //  Act
             customList.Add(wordOne);
             customList.Add(nullString);
             customList.Add(wordTwo);
-
             actual = customList.ToString();
 
             //  Assert
             Assert.AreEqual(expected, actual);
 
         }
-
 
     }
 }

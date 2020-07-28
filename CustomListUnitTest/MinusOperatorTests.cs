@@ -11,7 +11,6 @@ namespace CustomListUnitTest
     [TestClass]
     public class MinusOperatorTests
     {
-
         [TestMethod]
         public void MinusOperator_CustomList135Minus216_CustomList35()
         {
@@ -62,7 +61,6 @@ namespace CustomListUnitTest
             //  Act
             actual = minuend - subtrahend;
 
-
             //  Assert
             Assert.AreEqual(expected, actual);
         }
@@ -78,12 +76,10 @@ namespace CustomListUnitTest
             subtrahend.Add(3);
 
             CustomList<int> expected = new CustomList<int>();
-
             CustomList<int> actual;
 
             //  Act
             actual = minuend - subtrahend;
-
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -103,12 +99,10 @@ namespace CustomListUnitTest
             expected.Add(1);
             expected.Add(2);
             expected.Add(3);
-
             CustomList<int> actual;
 
             //  Act
             actual = minuend - subtrahend;
-
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -123,13 +117,10 @@ namespace CustomListUnitTest
             minuend.Add(3);
 
             CustomList<int> expected = new CustomList<int>();
-            
-
             CustomList<int> actual;
 
             //  Act
             actual = minuend - minuend;
-
 
             //  Assert
             Assert.AreEqual(expected, actual);

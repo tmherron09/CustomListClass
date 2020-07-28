@@ -19,7 +19,6 @@ namespace CustomListUnitTest
             int actual;
 
             //  Act
-
             customList.Add(10);
             actual = customList.Count;
 
@@ -36,7 +35,6 @@ namespace CustomListUnitTest
             int actual;
 
             //  Act
-
             customList.Add(10);
             customList.Add(12);
             customList.Add(0);
@@ -94,6 +92,7 @@ namespace CustomListUnitTest
             customList.Add(4);
             customList.Add(5);
             actual = customList[0];
+
             //  Assert
             Assert.AreEqual(expected, actual);
         }

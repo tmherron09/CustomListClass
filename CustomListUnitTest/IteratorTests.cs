@@ -122,7 +122,6 @@ namespace CustomListUnitTest
             //  Act
             actual = addMethod.Equals(initializer);
 
-
             //  Assert
             Assert.AreEqual(expected, actual);
         }

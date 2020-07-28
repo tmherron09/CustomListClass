@@ -11,7 +11,6 @@ namespace CustomListUnitTest
     [TestClass]
     public class ZipMethodTests
     {
-
         [TestMethod]
         public void ZipMethod_ZipCustomList135CustomList246_CustomList123456()
         {
