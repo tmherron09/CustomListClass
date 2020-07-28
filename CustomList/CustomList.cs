@@ -99,7 +99,11 @@ namespace CustomListClass
             // Set initial capacity to 10 per item
             StringBuilder sb = new StringBuilder(Count * 10);
             sb.Append(elements[0]);
-
+            for (int i = 1; i < Count; i++)
+            {
+                sb.Append(", ");
+                sb.Append(elements[i]);
+            }
 
 
             return sb.ToString();
