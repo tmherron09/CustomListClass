@@ -95,6 +95,10 @@ namespace CustomListClass
 
         public override string ToString()
         {
+            if (Count == 0)
+            {
+                return "Empty Custom List";
+            }
 
             // Set initial capacity to 10 per item
             StringBuilder sb = new StringBuilder(Count * 10);
