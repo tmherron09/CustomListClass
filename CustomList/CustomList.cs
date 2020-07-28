@@ -105,8 +105,11 @@ namespace CustomListClass
             sb.Append(elements[0]);
             for (int i = 1; i < Count; i++)
             {
-                sb.Append(", ");
-                sb.Append(elements[i]);
+                if (elements[i] != null)
+                {
+                    sb.Append(", ");
+                    sb.Append(elements[i]);
+                }
             }
 
 
