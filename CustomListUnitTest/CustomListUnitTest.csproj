@@ -55,6 +55,7 @@
     <Compile Include="PlusOperatorOverloadTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveMethodTests.cs" />
+    <Compile Include="SortMethodTests.cs" />
     <Compile Include="ToStringOverrideTests.cs" />
     <Compile Include="ZipMethodTests.cs" />
   </ItemGroup>
