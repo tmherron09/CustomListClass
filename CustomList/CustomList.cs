@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Text;
 
@@ -284,6 +285,53 @@ namespace CustomListClass
                 return elements[position];
             }
         }
+    
+    
+        public void Sort()
+        {
+            QuickSort(elements, 0, Count - 1);
+        }
+        public void QuickSort(T[] array, int start, int end)
+        {
+            if(start < end)
+            {
+                // Get the pivot point of the current array section
+                int pi = Partition(elements, start, end);
+
+                QuickSort(array, start, pi - 1);
+                QuickSort(array, pi + 1, end);
+            }
+        }
+
+        public int Partition(T[] array, int start, int end)
+        {
+            int smallerIndex = (start - 1);
+            T pivot = array[end];
+            T temp;
+
+            for(int i = start; i < end; i++)
+            {
+                //Check against pivot value using Comparer<T>
+                if(Comparer<T>.Default.Compare(array[i], pivot) <= 0)
+                {
+                    smallerIndex++;
+
+                    // Swap
+                    temp = array[smallerIndex];
+                    array[smallerIndex] = array[i];
+                    array[i] = temp;
+                }
+            }
+            // swap with pivot
+            temp = array[smallerIndex + 1];
+            array[smallerIndex + 1] = array[end];
+            array[end] = temp;
+            return smallerIndex + 1;
+
+        }
+
+
+    
     }
 }
 
