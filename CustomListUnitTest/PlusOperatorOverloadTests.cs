@@ -82,7 +82,50 @@ namespace CustomListUnitTest
 
             // Act
             actual = odd + even;
+
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void PlusOperator_AddTwoEmptyCustomList_ResultEmptyCustomList()
+        {
+            //  Arrange
+            CustomList<int> first = new CustomList<int>();
+            CustomList<int> second = new CustomList<int>();
+
+            CustomList<int> expected = new CustomList<int>();
+            CustomList<int> actual;
+
+
+            //  Act
+            actual = first + second;
+
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void PlusOperator_TwoCustomList3ItemsCapacity30EachAddedTogether_ResultCapacityEquals6()
+        {
+            //  Arrange
+            CustomList<int> odd = new CustomList<int>(30);
+            odd.Add(1);
+            odd.Add(3);
+            odd.Add(5);
+
+            CustomList<int> even = new CustomList<int>(30);
+            even.Add(2);
+            even.Add(4);
+            even.Add(6);
+
+            int expected = 6;
+            int actual;
             
+
+            // Act
+            CustomList<int> result = odd + even;
+            actual = result.Capacity;
 
             // Assert
             Assert.AreEqual(expected, actual);
