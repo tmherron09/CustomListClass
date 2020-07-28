@@ -66,8 +66,73 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void MinusOperator_EmptyMinusNotEmpty_ResultEmptyList()
+        {
+            //  Arrange
+            CustomList<int> minuend = new CustomList<int>();
+
+            CustomList<int> subtrahend = new CustomList<int>();
+            subtrahend.Add(1);
+            subtrahend.Add(2);
+            subtrahend.Add(3);
+
+            CustomList<int> expected = new CustomList<int>();
+
+            CustomList<int> actual;
+
+            //  Act
+            actual = minuend - subtrahend;
 
 
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void MinusOperator_NotEmptyMinusEmpty_ResultNoChange()
+        {
+            //  Arrange
+            CustomList<int> minuend = new CustomList<int>();
+            minuend.Add(1);
+            minuend.Add(2);
+            minuend.Add(3);
 
+            CustomList<int> subtrahend = new CustomList<int>();
+            
+            CustomList<int> expected = new CustomList<int>();
+            expected.Add(1);
+            expected.Add(2);
+            expected.Add(3);
+
+            CustomList<int> actual;
+
+            //  Act
+            actual = minuend - subtrahend;
+
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void MinusOperator_SubtractedFromSelf_EmptyList()
+        {
+            //  Arrange
+            CustomList<int> minuend = new CustomList<int>();
+            minuend.Add(1);
+            minuend.Add(2);
+            minuend.Add(3);
+
+            CustomList<int> expected = new CustomList<int>();
+            
+
+            CustomList<int> actual;
+
+            //  Act
+            actual = minuend - minuend;
+
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

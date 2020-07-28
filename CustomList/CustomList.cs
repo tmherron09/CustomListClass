@@ -164,8 +164,8 @@ namespace CustomListClass
 
         public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
         {
-            // New CustomList cannot be larger than the minuend
-            CustomList<T> difference = new CustomList<T>(minuend.Count);
+            
+            CustomList<T> difference = new CustomList<T>();
             difference += minuend;
 
             List<int> valuesToSubtract = new List<int>();
