@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace CustomListUnitTest
 {
     [TestClass]
-    class MinusOperatorTests
+    public class MinusOperatorTests
     {
 
         [TestMethod]

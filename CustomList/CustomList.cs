@@ -9,7 +9,7 @@ namespace CustomListClass
         private T[] elements;
         private int count;
         private const int startCapacity = 4;
-        
+
 
         public int Count { get { return count; } }
         public int Capacity
@@ -21,7 +21,7 @@ namespace CustomListClass
 
         }
         public int indexOfLast // If -1, Custom List is Empty
-        { 
+        {
             get
             {
                 return Count - 1;
@@ -124,7 +124,7 @@ namespace CustomListClass
         {
             CustomList<T> sum = new CustomList<T>(first.Count + second.Count);
 
-            for(int i = 0; i < first.Count; i++)
+            for (int i = 0; i < first.Count; i++)
             {
                 sum.Add(first[i]);
             }
@@ -147,14 +147,14 @@ namespace CustomListClass
         public override bool Equals(object value)
         {
             CustomList<T> customList = value as CustomList<T>;
-            
-            if( Count != customList.Count)
+
+            if (Count != customList.Count)
             {
                 return false;
             }
-            for(int i = 0; i < customList.Count; i++)
+            for (int i = 0; i < customList.Count; i++)
             {
-                if(!elements[i].Equals(customList[i]))
+                if (!elements[i].Equals(customList[i]))
                 {
                     return false;
                 }
@@ -162,7 +162,36 @@ namespace CustomListClass
             return true;
         }
 
+        public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
+        {
+            // New CustomList cannot be larger than the minuend
+            CustomList<T> difference = new CustomList<T>(minuend.Count);
+            difference += minuend;
 
+            int[] valuesToSubtract = new int[minuend.Count];
+            int indexOfValuesToSubtract = 0;
+
+            for (int i = 0; i < minuend.Count; i++)
+            {
+                for (int j = 0; j < subtrahend.Count; j++)
+                {
+                    if (minuend[i].Equals(subtrahend[j]))
+                    {
+                        valuesToSubtract[indexOfValuesToSubtract] = i;
+                        indexOfValuesToSubtract++;
+                        break;
+                    }
+                }
+            }
+            for (int i = 0; i < valuesToSubtract.Length; i++)
+            {
+                difference.Remove(minuend[valuesToSubtract[i]]);
+            }
+
+
+
+            return difference;
+        }
     }
 }
 
