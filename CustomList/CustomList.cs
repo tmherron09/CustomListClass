@@ -168,22 +168,22 @@ namespace CustomListClass
             CustomList<T> difference = new CustomList<T>(minuend.Count);
             difference += minuend;
 
-            int[] valuesToSubtract = new int[minuend.Count];
-            int indexOfValuesToSubtract = 0;
+            List<int> valuesToSubtract = new List<int>();
+            List<int> subtrahendSubtractedIndexs = new List<int>();
 
             for (int i = 0; i < minuend.Count; i++)
             {
                 for (int j = 0; j < subtrahend.Count; j++)
                 {
-                    if (minuend[i].Equals(subtrahend[j]))
+                    if (minuend[i].Equals(subtrahend[j]) && !subtrahendSubtractedIndexs.Contains(j))
                     {
-                        valuesToSubtract[indexOfValuesToSubtract] = i;
-                        indexOfValuesToSubtract++;
+                        valuesToSubtract.Add(i);
+                        subtrahendSubtractedIndexs.Add(j);
                         break;
                     }
                 }
             }
-            for (int i = 0; i < valuesToSubtract.Length; i++)
+            for (int i = 0; i < valuesToSubtract.Count; i++)
             {
                 difference.Remove(minuend[valuesToSubtract[i]]);
             }
