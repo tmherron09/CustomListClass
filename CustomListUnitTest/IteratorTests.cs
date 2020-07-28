@@ -25,7 +25,7 @@ namespace CustomListUnitTest
             int expected = 15;
             int actual = 0;
             //  Act
-            foreach(int number in customList)
+            foreach (int number in customList)
             {
                 actual += number;
             }
@@ -73,35 +73,6 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
-        // Test we can modify each item in list
-        [TestMethod]
-        public void Iterate_IterateAndAdd1ToEachItem_AllItems1Greater()
-        {
-            //  Arrange
-            CustomList<int> customList = new CustomList<int>();
-            customList.Add(1);
-            customList.Add(2);
-            customList.Add(3);
-            customList.Add(4);
-            customList.Add(5);
-
-            CustomList<int> expected = new CustomList<int>();
-            expected.Add(2);
-            expected.Add(3);
-            expected.Add(4);
-            expected.Add(5);
-            expected.Add(6);
-
-            CustomList<int> actual;
-            //  Act
-            CustomList<int> actual = customList;
-            foreach (int number in actual)
-            {
-                number += 1;
-            }
-            //  Assert
-            Assert.AreEqual(expected, actual);
-        }
         // Test we can remove item in CustomList
         [TestMethod]
         public void Iterate_IterateCustomList12345AndRemoveWhereInt3_CustomList1245()
@@ -119,13 +90,13 @@ namespace CustomListUnitTest
             expected.Add(2);
             expected.Add(4);
             expected.Add(5);
-            
+
             CustomList<int> actual;
             //  Act
-            CustomList<int> actual = customList;
+            actual = customList;
             foreach (int number in actual)
             {
-                if(number == 3)
+                if (number == 3)
                 {
                     actual.Remove(number);
                 }
@@ -133,6 +104,27 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void Iterate_TestCurlyBracketInitializer_Equals15()
+        {
+            //  Arrange
+            CustomList<int> initializer = new CustomList<int>() { 1, 2, 3, 4, 5 };
 
+            CustomList<int> addMethod = new CustomList<int>();
+            addMethod.Add(1);
+            addMethod.Add(2);
+            addMethod.Add(3);
+            addMethod.Add(4);
+            addMethod.Add(5);
+
+            bool expected = true;
+            bool actual;
+            //  Act
+            actual = addMethod.Equals(initializer);
+
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

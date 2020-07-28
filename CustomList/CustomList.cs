@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,12 +9,12 @@ namespace CustomListClass
     /// Custom List class of Type Generic
     /// </summary>
     /// <typeparam name="T">Type of Item in CustomList</typeparam>
-    public class CustomList<T>
+    public class CustomList<T> : IEnumerator, IEnumerable
     {
         private T[] elements;
         private int count;
         private const int startCapacity = 4;
-
+        int position = -1; // for iteration
 
         public int Count { get { return count; } }
         public int Capacity
@@ -168,7 +169,7 @@ namespace CustomListClass
 
         public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
         {
-            
+
             CustomList<T> difference = new CustomList<T>();
             difference += minuend;
 
@@ -192,9 +193,33 @@ namespace CustomListClass
                 difference.Remove(minuend[valuesToSubtract[i]]);
             }
 
-
-
             return difference;
+        }
+
+
+        // IEnumerator and IEnumerable required methods
+        public IEnumerator GetEnumerator()
+        {
+            return (IEnumerator)this;
+        }
+        // for IEnumerator
+        public bool MoveNext()
+        {
+            position++;
+            return (position < Count);
+        }
+        // for IEnumerable
+        public void Reset()
+        {
+            position = 0;
+        }
+        // for IEnumerable
+        public object Current
+        {
+            get
+            {
+                return elements[position];
+            }
         }
     }
 }
