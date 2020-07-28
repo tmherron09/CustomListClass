@@ -99,7 +99,25 @@ namespace CustomListClass
             }
             return false;
         }
+        public CustomList<T> Zip(CustomList<T> listB)
+        {
+            CustomList<T> zipped = new CustomList<T>(Count + listB.Count);
+            // Iterate over the large of two lists
+            int iterations = Count > listB.Count ? Count : listB.Count;
+            for(int i = 0; i < iterations; i++)
+            {
+                if(i < Count)
+                {
+                    zipped.Add(this[i]);
+                }
+                if(i < listB.Count)
+                {
+                    zipped.Add(listB[i]);
+                }
+            }
 
+            return zipped;
+        }
 
 
         public override string ToString()
