@@ -8,7 +8,7 @@ namespace CustomListClass
     {
         private T[] elements;
         private int count;
-        private int startCapacity;
+        private const int startCapacity = 4;
         
 
         public int Count { get { return count; } }
@@ -50,7 +50,11 @@ namespace CustomListClass
         public CustomList()
         {
             elements = new T[0];
-            startCapacity = 4;
+            count = 0;
+        }
+        public CustomList(int capacity)
+        {
+            elements = new T[capacity];
             count = 0;
         }
 
@@ -115,6 +119,15 @@ namespace CustomListClass
 
             return sb.ToString();
         }
+
+        public static CustomList<T> operator +(CustomList<T> first, CustomList<T> second)
+        {
+
+
+
+            throw new NotImplementedException();
+        }
+
 
 
     }
