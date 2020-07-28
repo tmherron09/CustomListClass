@@ -4,6 +4,10 @@ using System.Text;
 
 namespace CustomListClass
 {
+    /// <summary>
+    /// Custom List class of Type Generic
+    /// </summary>
+    /// <typeparam name="T">Type of Item in CustomList</typeparam>
     public class CustomList<T>
     {
         private T[] elements;
