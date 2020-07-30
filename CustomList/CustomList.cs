@@ -94,7 +94,7 @@ namespace CustomListClass
         public void Add(T value)
         {
             EnsureCapacity(Count + 1);
-            
+
             elements[Count] = value;
             count++;
         }
@@ -131,13 +131,13 @@ namespace CustomListClass
             CustomList<T> zipped = new CustomList<T>();
             // Iterate over the large of two lists
             int iterations = Count > listB.Count ? Count : listB.Count;
-            for(int i = 0; i < iterations; i++)
+            for (int i = 0; i < iterations; i++)
             {
-                if(i < Count)
+                if (i < Count)
                 {
                     zipped.Add(this[i]);
                 }
-                if(i < listB.Count)
+                if (i < listB.Count)
                 {
                     zipped.Add(listB[i]);
                 }
@@ -166,7 +166,7 @@ namespace CustomListClass
         //        }
         //    }
         //}
-        
+
 
         /// <summary>
         /// Converts contents of <see cref="CustomList{T}" /> to string. String format includes $"elements[0], elements[1], elements[3]..." for all items.
@@ -306,7 +306,7 @@ namespace CustomListClass
             }
         }
 
-        
+
 
         public void Sort()
         {
@@ -314,7 +314,7 @@ namespace CustomListClass
         }
         public void QuickSort(T[] array, int start, int end)
         {
-            if(start < end)
+            if (start < end)
             {
                 // Get the pivot point of the current array section
                 int pi = Partition(elements, start, end);
@@ -329,10 +329,10 @@ namespace CustomListClass
             T pivot = array[end];
             T temp;
 
-            for(int i = start; i < end; i++)
+            for (int i = start; i < end; i++)
             {
                 //Check against pivot value using Comparer<T>
-                if(Comparer<T>.Default.Compare(array[i], pivot) <= 0)
+                if (Comparer<T>.Default.Compare(array[i], pivot) <= 0)
                 {
                     smallerIndex++;
 
@@ -353,9 +353,9 @@ namespace CustomListClass
         public int IndexOf(T item)
         {
             int lowerBounds = 0;
-            for(int i = lowerBounds; i < Count; i++)
+            for (int i = lowerBounds; i < Count; i++)
             {
-                if(elements[i].Equals(item))
+                if (elements[i].Equals(item))
                 {
                     return i;
                 }
@@ -366,7 +366,7 @@ namespace CustomListClass
         public int IndexOf(T item, int startingIndex)
         {
             int lowerBounds = GetLowerBounds(startingIndex);
-            if(lowerBounds == -1)
+            if (lowerBounds == -1)
             {
                 return -1;
             }
@@ -436,31 +436,46 @@ namespace CustomListClass
                 this.Add(item);
                 return;
             }
-            EnsureCapacity(Count + 1);
             ShiftItems(index, 1);
             elements[index] = item;
-            
+        }
+        public void Insert(int index, T[] item)
+        {
+            if (index < 0 || index > Count)
+            {
+                return;
+            }
+            ShiftItems(index, item.Length);
+            int itemIndex = 0;
+            for (int i = index; i < index + item.Length; i++)
+            {
+
+                elements[i] = item[itemIndex];
+                itemIndex++;
+            }
         }
         public void ShiftItems(int startIndex, int amount)
         {
-            if(Count == Capacity)
+            if (startIndex < 0 || startIndex >= Capacity)
             {
-                EnsureCapacity(Count + amount);
+                throw new IndexOutOfRangeException();
             }
+            EnsureCapacity(Count + amount);
+
             count += amount;
-            for(int i = (Count - 1) + amount; i >= startIndex + amount ; i--)
+            for (int i = (Count - 1) + amount; i >= startIndex + amount; i--)
             {
                 elements[i] = elements[i - amount];
             }
         }
         private void EnsureCapacity(int minimum)
         {
-            if(Capacity < minimum)
+            if (Capacity < minimum)
             {
                 int newCapacity = Capacity == 0 ? startCapacity : Capacity * 2;
                 int maxArrayCount = 0X7FEFFFFF;
                 newCapacity = newCapacity > maxArrayCount ? maxArrayCount : newCapacity;
-                newCapacity = newCapacity < minimum ? minimum: newCapacity;
+                newCapacity = newCapacity < minimum ? minimum : newCapacity;
                 IncreaseCapacity(newCapacity);
             }
         }
@@ -472,7 +487,7 @@ namespace CustomListClass
             }
             T[] newElements = new T[newCapacity];
             // Don't user Array.CopyTo()
-            for(int i = 0; i < Count; i++)
+            for (int i = 0; i < Count; i++)
             {
                 newElements[i] = elements[i];
             }

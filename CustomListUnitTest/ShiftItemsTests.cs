@@ -16,7 +16,7 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customeList = new CustomList<int>(8) { 1, 2, 3, 4, 5 };
-            CustomList<int> customeListTwo = new CustomList<int>(8) { 1, 2, 3,3, 4, 5 };
+            CustomList<int> customeListTwo = new CustomList<int>(8) { 1, 2, 3, 3, 4, 5 };
 
             bool expected = true;
             bool actual;
@@ -29,7 +29,23 @@ namespace CustomListUnitTest
             Assert.AreEqual(expected, actual);
 
         }
+        [TestMethod]
+        public void ShiftItemsMethod_Shift12345AtIndex0Amount5_CL12334512345()
+        {
+            //  Arrange
+            CustomList<int> customeList = new CustomList<int>() { 1, 2, 3, 4, 5 };
+            CustomList<int> customeListTwo = new CustomList<int>() { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 };
 
+            bool expected = true;
+            bool actual;
+
+            //  Act
+            customeList.ShiftItems(0, 5);
+            actual = customeList.Equals(customeListTwo);
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
 

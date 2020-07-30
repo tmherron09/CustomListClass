@@ -76,6 +76,54 @@ namespace CustomListUnitTest
             // Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void InsertMethod_InsertArray345AtIndex4Of15_CL12345()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>() { 1, 5 };
+            CustomList<int> customListTwo = new CustomList<int>() { 1, 2, 3, 4, 5 };
+            int[] insertNumbers = { 2, 3, 4 };
+            bool expected = true;
+            bool actual;
+            //  Act
+            customList.Insert(1, insertNumbers);
+            actual = (customList.Equals(customListTwo));
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void InsertMethod_InsertArray12345AtIndex5Of12345_CL1234512345()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>() { 1,2,3,4, 5 };
+            CustomList<int> customListTwo = new CustomList<int>() { 1, 2, 3, 4, 5,1,2,3,4,5 };
+            int[] insertNumbers = {1, 2, 3, 4, 5 };
+            bool expected = true;
+            bool actual;
+            //  Act
+            customList.Insert(5, insertNumbers);
+            actual = (customList.Equals(customListTwo));
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void InsertMethod_InsertArray12345AtIndex0Of12345_CL1234512345()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5 };
+            CustomList<int> customListTwo = new CustomList<int>() { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 };
+            int[] insertNumbers = { 1, 2, 3, 4, 5 };
+            bool expected = true;
+            bool actual;
+            //  Act
+            customList.Insert(0, insertNumbers);
+            actual = (customList.Equals(customListTwo));
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
 
     }
