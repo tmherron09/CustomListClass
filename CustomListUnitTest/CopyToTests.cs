@@ -16,11 +16,13 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>() { 1, 2, 3 };
-            int[] expected = { 1, 2, 3 };
-            int[] actual = new int[3];
-
+            int[] expectedList = { 1, 2, 3 };
+            int[] actualList = new int[3];
+            bool expected = true;
+            bool actual;
             //  Act
-            customList.CopyTo(actual, 0);
+            customList.CopyTo(actualList, 0);
+            actual = Enumerable.SequenceEqual(expectedList, actualList);
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -30,12 +32,15 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>() { 1, 2, 3 };
-            int[] expected = { 1, 2, 3, 4, 5 };
-            int[] actual = new int[5];
-            actual[3] = 5;
-            actual[4] = 5;
+            int[] expectedList = { 1, 2, 3, 4, 5 };
+            int[] actualList = new int[5];
+            actualList[3] = 4;
+            actualList[4] = 5;
+            bool expected = true;
+            bool actual;
             //  Act
-            customList.CopyTo(actual, 0);
+            customList.CopyTo(actualList, 0);
+            actual = Enumerable.SequenceEqual(expectedList, actualList);
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -45,11 +50,13 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4 };
-            int[] expected = { 1, 2, 1, 2, 3, 4, 7, 8 };
-            int[] actual = { 1, 2, 3, 4, 5, 6, 7, 8 };
-
+            int[] expectedList = { 1, 2, 1, 2, 3, 4, 7, 8 };
+            int[] actualList = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            bool expected = true;
+            bool actual;
             //  Act
-            customList.CopyTo(actual, 2);
+            customList.CopyTo(actualList, 2);
+            actual = Enumerable.SequenceEqual(expectedList, actualList);
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -82,11 +89,13 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5 };
-            int[] expected = { 4, 5, 3, 4 };
-            int[] actual = { 1, 2, 3, 4 };
-
+            int[] expectedList = { 4, 5, 3, 4 };
+            int[] actualList = { 1, 2, 3, 4 };
+            bool expected = true;
+            bool actual;
             //  Act
-            customList.CopyTo(3, actual, 0, 2);
+            customList.CopyTo(3, actualList, 0, 2);
+            actual = Enumerable.SequenceEqual(expectedList, actualList);
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -96,11 +105,13 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4 };
-            int[] expected = { 5, 2, 3, 8 };
-            int[] actual = { 5, 6, 7, 8 };
-
+            int[] expectedList = { 5, 2, 3, 8 };
+            int[] actualList = { 5, 6, 7, 8 };
+            bool expected = true;
+            bool actual;
             //  Act
-            customList.CopyTo(1, actual, 1, 2);
+            customList.CopyTo(1, actualList, 1, 2);
+            actual = Enumerable.SequenceEqual(expectedList, actualList);
 
             //  Assert
             Assert.AreEqual(expected, actual);
@@ -110,13 +121,15 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4 };
-            int[] expected = { 1,2,3,4};
-            int[] actual = new int[4];
-
+            int[] expectedList = { 1,2,3,4};
+            int[] actualList = new int[4];
+            bool expected = true;
+            bool actual;
             //  Act
-            customList.CopyTo(0, actual, 0, customList.Count);
+            customList.CopyTo(0, actualList, 0, customList.Count);
+            actual = Enumerable.SequenceEqual(expectedList, actualList);
 
-            //  Assert
+            //  Assertt
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
@@ -135,11 +148,13 @@ namespace CustomListUnitTest
         {
             //  Arrange
             CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4 };
-            int[] expected = { 0,0,1,2,3,4,0,0};
-            int[] actual = new int[8];
-
+            int[] expectedList = { 0,0,1,2,3,4,0,0};
+            int[] actualList = new int[8];
+            bool expected = true;
+            bool actual;
             //  Act
-            customList.CopyTo(0, actual, 2, customList.Count);
+            customList.CopyTo(0, actualList, 2, customList.Count);
+            actual = Enumerable.SequenceEqual(expectedList, actualList);
 
             //  Assert
             Assert.AreEqual(expected, actual);

@@ -106,7 +106,7 @@ namespace CustomListClass
         public bool Remove(T value)
         {
             int index = IndexOf(value);
-            if(index != -1 && index < Count)
+            if (index != -1 && index < Count)
             {
                 RemoveAt(index);
                 return true;
@@ -261,15 +261,25 @@ namespace CustomListClass
 
         int position = -1; // for iteration
         // IEnumerator and IEnumerable required methods
+        // WIP deciphering between two methods.
         public IEnumerator GetEnumerator()
         {
+
             return (IEnumerator)this;
 
+            //return GetMyEnumerator();
             //for (int i = 0; i < count; i++)
             //{
             //    yield return elements[i];
             //}
         }
+        //public IEnumerator GetMyEnumerator()
+        //{
+        //    for (int i = 0; i < count; i++)
+        //    {
+        //        yield return elements[i];
+        //    }
+        //}
         // for IEnumerator
         public bool MoveNext()
         {
@@ -289,7 +299,6 @@ namespace CustomListClass
                 return elements[position];
             }
         }
-
 
 
         public void Sort()
@@ -453,8 +462,8 @@ namespace CustomListClass
                 itemIndex++;
             }
         }
-        
-        
+
+
         public void ShiftItems(int startIndex, int amount)
         {
             if (startIndex < 0 || startIndex > Count)
@@ -469,8 +478,8 @@ namespace CustomListClass
                 elements[i] = elements[i - amount];
             }
         }
-        
-        
+
+
         private void EnsureCapacity(int minimum)
         {
             if (Capacity < minimum)
@@ -498,8 +507,8 @@ namespace CustomListClass
             elements = newElements;
 
         }
-        
-        
+
+
         public void RemoveAt(int index)
         {
             if (index >= 0 && index < Count)
@@ -515,7 +524,7 @@ namespace CustomListClass
 
         public void Clear()
         {
-            for(int i = 0; i < Count; i++)
+            for (int i = 0; i < Count; i++)
             {
                 elements[i] = default(T);
             }
@@ -529,11 +538,35 @@ namespace CustomListClass
 
         public void CopyTo(T[] array, int arrayIndex)
         {
-            throw new NotImplementedException();
+            if (arrayIndex >= array.Length || arrayIndex + Count - 1 >= array.Length)
+            {
+                throw new ArgumentException();
+            }
+            if (arrayIndex < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            foreach (T item in this)
+            {
+                array[arrayIndex] = item;
+                arrayIndex++;
+            }
         }
         public void CopyTo(int index, T[] array, int arrayIndex, int count)
         {
-            throw new NotImplementedException();
+            if (arrayIndex >= array.Length || arrayIndex + count - 1 >= array.Length)
+            {
+                throw new ArgumentException();
+            }
+            if (arrayIndex < 0 || index < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            for (int i = index; i <= index + count - 1; i++)
+            {
+                array[arrayIndex] = elements[i];
+                arrayIndex++;
+            }
         }
 
         IEnumerator<T> IEnumerable<T>.GetEnumerator()
