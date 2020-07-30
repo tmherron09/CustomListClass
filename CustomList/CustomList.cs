@@ -10,7 +10,7 @@ namespace CustomListClass
     /// Custom List class of Type Generic
     /// </summary>
     /// <typeparam name="T">Type of Item in CustomList</typeparam>
-    public class CustomList<T> : IEnumerable, IEnumerator, IList<T>
+    public class CustomList<T> : IEnumerable, IEnumerator, IList<T>, ICollection<T>
     {
         /// <summary>
         /// Inner Array of <see cref="CustomList{T}" />
@@ -210,32 +210,19 @@ namespace CustomListClass
         /// <returns></returns>
         public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
         {
-            CustomList<T> difference = new CustomList<T>();
-            difference += minuend;
-
-            List<int> valuesToSubtract = new List<int>();
-            List<int> subtrahendSubtractedIndexs = new List<int>();
-
-            for (int i = 0; i < minuend.Count; i++)
+            if(minuend == subtrahend)
             {
-                for (int j = 0; j < subtrahend.Count; j++)
-                {
-                    if (minuend[i].Equals(subtrahend[j]) && !subtrahendSubtractedIndexs.Contains(j))
-                    {
-                        valuesToSubtract.Add(i);
-                        subtrahendSubtractedIndexs.Add(j);
-                        break;
-                    }
-                }
+                minuend.Clear();
+                return minuend;
             }
-            for (int i = 0; i < valuesToSubtract.Count; i++)
+            foreach(T item in subtrahend)
             {
-                difference.Remove(minuend[valuesToSubtract[i]]);
+                minuend.Remove(item);
             }
-            return difference;
+            return minuend;
         }
         /// <summary>
-        /// Determines whether the specified object as a <see cref="CustomList{T}" /> is equal to this instance.
+        /// Determines whether the specified object as a <see cref="CustomList{T}" /> is equal to this instance. Similiar to Enumerable.SequenceEqual as only items in Count are compared and not Capacity.
         /// </summary>
         /// <param name="value">The <see cref="CustomList{T}" /> to compare with this instance.</param>
         /// <returns>

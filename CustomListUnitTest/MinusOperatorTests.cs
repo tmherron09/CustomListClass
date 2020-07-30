@@ -125,5 +125,22 @@ namespace CustomListUnitTest
             //  Assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void MinusOperator_MinuendSubtraHendEqual_EmptyList()
+        {
+            //  Arrange
+            CustomList<int> minuend = new CustomList<int>() {1,2,3 };
+            CustomList<int> subtrahend = new CustomList<int>() {1,2,3 };
+            
+
+            CustomList<int> expected = new CustomList<int>();
+            CustomList<int> actual;
+
+            //  Act
+            actual = minuend - subtrahend;
+
+            //  Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
