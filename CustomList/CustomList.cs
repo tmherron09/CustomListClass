@@ -10,7 +10,7 @@ namespace CustomListClass
     /// Custom List class of Type Generic
     /// </summary>
     /// <typeparam name="T">Type of Item in CustomList</typeparam>
-    public class CustomList<T> : IEnumerable, IList<T>
+    public class CustomList<T> : IEnumerable, IEnumerator, IList<T>
     {
         /// <summary>
         /// Inner Array of <see cref="CustomList{T}" />
@@ -375,10 +375,31 @@ namespace CustomListClass
             // Return -1 if not found.
             return -1;
         }
-        public int GetLowerBounds()
+        public int IndexOf(T item, int startingIndex)
         {
+            int lowerBounds = GetLowerBounds(startingIndex);
+            if(lowerBounds == -1)
+            {
+                return -1;
+            }
 
+            for (int i = lowerBounds; i < Count; i++)
+            {
+                if (elements[i].Equals(item))
+                {
+                    return i;
+                }
+            }
+            // Return -1 if not found.
             return -1;
+        }
+        public int GetLowerBounds(int index)
+        {
+            if (index < 0 || index >= Count)
+            {
+                return -1;
+            }
+            return index;
         }
 
         public void Insert(int index, T item)
