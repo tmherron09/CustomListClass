@@ -393,6 +393,31 @@ namespace CustomListClass
             // Return -1 if not found.
             return -1;
         }
+        public int IndexOf(T item, int startingIndex, int count)
+        {
+            // Lower index
+            int lowerBounds = GetLowerBounds(startingIndex);
+            if (lowerBounds == -1)
+            {
+                return -1;
+            }
+            // Upper Index
+            int upperBounds = GetUpperBounds(lowerBounds, count);
+            if (upperBounds == -1)
+            {
+                return -1;
+            }
+
+            for (int i = lowerBounds; i <= upperBounds; i++)
+            {
+                if (elements[i].Equals(item))
+                {
+                    return i;
+                }
+            }
+            // Return -1 if not found.
+            return -1;
+        }
         public int GetLowerBounds(int index)
         {
             if (index < 0 || index >= Count)
@@ -400,6 +425,15 @@ namespace CustomListClass
                 return -1;
             }
             return index;
+        }
+        public int GetUpperBounds(int lowerBounds, int count)
+        {
+            if (lowerBounds + (count - 1) >= Count || count <= 0)
+            {
+                return -1;
+            }
+            // Include the first index in the sound.
+            return lowerBounds + (count - 1);
         }
 
         public void Insert(int index, T item)

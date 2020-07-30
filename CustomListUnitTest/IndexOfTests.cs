@@ -111,34 +111,48 @@ namespace CustomListUnitTest
             // Assert
             Assert.AreEqual(expected, actual);
         }
-        //[TestMethod]
-        //public void IndexOf_CL1234512345IndexOf2StartIndex4Count4_Index6()
-        //{
-        //    //  Arrange
-        //    CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 };
+        [TestMethod]
+        public void IndexOf_CL1234512345IndexOf2StartIndex4Count4_Index6()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 };
 
-        //    int expected = 6;
-        //    int actual;
-        //    //  Act
-        //    actual = customList.IndexOf(2, 4, 4);
+            int expected = 6;
+            int actual;
+            //  Act
+            actual = customList.IndexOf(2, 4, 4);
 
-        //    // Assert
-        //    Assert.AreEqual(expected, actual);
-        //}
-        //[TestMethod]
-        //public void IndexOf_CL1234512345IndexOf3StartIndex3Count4_ReturnNegative1()
-        //{
-        //    //  Arrange
-        //    CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 };
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void IndexOf_CL1234512345IndexOf3StartIndex3Count4_ReturnNegative1()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 };
 
-        //    int expected = -1;
-        //    int actual;
-        //    //  Act
-        //    actual = customList.IndexOf(3, 3, 4);
+            int expected = -1;
+            int actual;
+            //  Act
+            actual = customList.IndexOf(3, 3, 4);
 
-        //    // Assert
-        //    Assert.AreEqual(expected, actual);
-        //}
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void IndexOf_CL12345IndexOf3StartIndex2Count6_ReturnNegative1()
+        {
+            //  Arrange
+            CustomList<int> customList = new CustomList<int>() { 1, 2, 3, 4, 5 };
+
+            int expected = -1;
+            int actual;
+            //  Act
+            actual = customList.IndexOf(3, 2, 6);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 }
