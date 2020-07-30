@@ -93,19 +93,7 @@ namespace CustomListClass
         /// <param name="value"><see cref="CustomList{T}" /> to Add to end of inner array.</param>
         public void Add(T value)
         {
-            
-            if (Capacity == 0)
-            {
-                T[] newElements = new T[startCapacity];
-                elements = newElements;
-            }
-            else if (count == Capacity)
-            {
-                int newLength = elements.Length * 2;
-                T[] newElements = new T[newLength];
-                elements.CopyTo(newElements, 0);
-                elements = newElements;
-            }
+            EnsureCapacity(Count + 1);
             
             elements[Count] = value;
             count++;
@@ -436,11 +424,62 @@ namespace CustomListClass
             return lowerBounds + (count - 1);
         }
 
+
         public void Insert(int index, T item)
         {
-            throw new NotImplementedException();
+            if (index < 0 || index > Count)
+            {
+                return;
+            }
+            else if (index == Count)
+            {
+                this.Add(item);
+                return;
+            }
+            EnsureCapacity(Count + 1);
+            ShiftItems(index, 1);
+            elements[index] = item;
+            
         }
+        public void ShiftItems(int startIndex, int amount)
+        {
+            if(Count == Capacity)
+            {
+                EnsureCapacity(Count + amount);
+            }
+            count += amount;
+            for(int i = (Count - 1) + amount; i >= startIndex + amount ; i--)
+            {
+                elements[i] = elements[i - amount];
+            }
+        }
+        private void EnsureCapacity(int minimum)
+        {
+            if(Capacity < minimum)
+            {
+                int newCapacity = Capacity == 0 ? startCapacity : Capacity * 2;
+                int maxArrayCount = 0X7FEFFFFF;
+                newCapacity = newCapacity > maxArrayCount ? maxArrayCount : newCapacity;
+                newCapacity = newCapacity < minimum ? minimum: newCapacity;
+                IncreaseCapacity(newCapacity);
+            }
+        }
+        public void IncreaseCapacity(int newCapacity)
+        {
+            if (newCapacity <= Capacity)
+            {
+                return;
+            }
+            T[] newElements = new T[newCapacity];
+            // Don't user Array.CopyTo()
+            for(int i = 0; i < Count; i++)
+            {
+                newElements[i] = elements[i];
+            }
+            // Assign to new array.
+            elements = newElements;
 
+        }
         public void RemoveAt(int index)
         {
             throw new NotImplementedException();
