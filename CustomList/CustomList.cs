@@ -514,7 +514,15 @@ namespace CustomListClass
         
         public void RemoveAt(int index)
         {
-            
+            if (index >= 0 && index < Count)
+            {
+                for (int i = index; i < Count - 1; i++)
+                {
+                    elements[i] = elements[i + 1];
+                }
+                elements[Count - 1] = default(T);
+                count--;
+            }
         }
 
         public void Clear()

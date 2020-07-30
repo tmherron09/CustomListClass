@@ -15,8 +15,8 @@ namespace CustomListUnitTest
         public void ShiftItemsMethod_Shift12345AtIndex2Amount1_CL123345()
         {
             //  Arrange
-            CustomList<int> customeList = new CustomList<int>(8) { 1, 2, 3, 4, 5 };
-            CustomList<int> customeListTwo = new CustomList<int>(8) { 1, 2, 3, 3, 4, 5 };
+            CustomList<int> customeList = new CustomList<int>() { 1, 2, 3, 4, 5 };
+            CustomList<int> customeListTwo = new CustomList<int>() { 1, 2, 3, 3, 4, 5 };
 
             bool expected = true;
             bool actual;
