@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="AddMethodTests.cs" />
     <Compile Include="IndexOfTests.cs" />
+    <Compile Include="InsertTests.cs" />
     <Compile Include="IteratorTests.cs" />
     <Compile Include="MinusOperatorTests.cs" />
     <Compile Include="PlusOperatorOverloadTests.cs" />
