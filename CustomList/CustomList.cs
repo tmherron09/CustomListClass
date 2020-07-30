@@ -454,6 +454,21 @@ namespace CustomListClass
                 itemIndex++;
             }
         }
+        public void Insert(int index, CustomList<T> listB)
+        {
+            if (index < 0 || index > Count)
+            {
+                return;
+            }
+            ShiftItems(index, listB.Count);
+            int itemIndex = 0;
+            for (int i = index; i < index + listB.Count; i++)
+            {
+
+                elements[i] = listB[itemIndex];
+                itemIndex++;
+            }
+        }
         public void ShiftItems(int startIndex, int amount)
         {
             if (startIndex < 0 || startIndex >= Capacity)
@@ -463,7 +478,7 @@ namespace CustomListClass
             EnsureCapacity(Count + amount);
 
             count += amount;
-            for (int i = (Count - 1) + amount; i >= startIndex + amount; i--)
+            for (int i = (Count - 1); i >= startIndex + amount; i--)
             {
                 elements[i] = elements[i - amount];
             }
@@ -495,9 +510,11 @@ namespace CustomListClass
             elements = newElements;
 
         }
+        
+        
         public void RemoveAt(int index)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Clear()
