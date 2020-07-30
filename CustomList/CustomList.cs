@@ -10,7 +10,7 @@ namespace CustomListClass
     /// Custom List class of Type Generic
     /// </summary>
     /// <typeparam name="T">Type of Item in CustomList</typeparam>
-    public class CustomList<T> : IEnumerator, IEnumerable
+    public class CustomList<T> : IEnumerable, IList<T>
     {
         /// <summary>
         /// Inner Array of <see cref="CustomList{T}" />
@@ -49,6 +49,8 @@ namespace CustomListClass
                 return Count - 1;
             }
         }
+        // From ICollection
+        public bool IsReadOnly => false;
         public T this[int i]
         {
             get
@@ -61,7 +63,7 @@ namespace CustomListClass
             }
             set
             {
-                if (i <= IndexOfLast && IndexOfLast >= 0)
+                if (i < Count && i >= 0)
                 {
                     elements[i] = value;
                 }
@@ -91,20 +93,22 @@ namespace CustomListClass
         /// <param name="value"><see cref="CustomList{T}" /> to Add to end of inner array.</param>
         public void Add(T value)
         {
-            count++;
+            
             if (Capacity == 0)
             {
                 T[] newElements = new T[startCapacity];
                 elements = newElements;
             }
-            else if (count > Capacity)
+            else if (count == Capacity)
             {
                 int newLength = elements.Length * 2;
                 T[] newElements = new T[newLength];
                 elements.CopyTo(newElements, 0);
                 elements = newElements;
             }
-            elements[IndexOfLast] = value;
+            
+            elements[Count] = value;
+            count++;
         }
         /// <summary>
         /// Removes the first T value matching object from the <see cref="CustomList{T}" />.
@@ -136,7 +140,7 @@ namespace CustomListClass
         /// <returns>New <see cref="CustomList{T}" /> of <paramref name="this"/> zipped with <paramref name="listB"/> </returns>
         public CustomList<T> Zip(CustomList<T> listB)
         {
-            CustomList<T> zipped = new CustomList<T>(Count + listB.Count);
+            CustomList<T> zipped = new CustomList<T>();
             // Iterate over the large of two lists
             int iterations = Count > listB.Count ? Count : listB.Count;
             for(int i = 0; i < iterations; i++)
@@ -153,6 +157,29 @@ namespace CustomListClass
 
             return zipped;
         }
+
+        //public void ZipOnSelf(CustomList<T> listB)
+        //{
+        //    CustomList<T> zipped = new CustomList<T>();
+        //    zipped.Add(ZipYield(this, listB);
+        //}
+        //public object ZipYield(CustomList<T> listA, CustomList<T> listB)
+        //{
+        //    int longerLength = listA.Count > listB.Count ? listA.Count : listB.Count;
+        //    for(int i = 0; i < longerLength; i++)
+        //    {
+        //        if(i < listA.Count)
+        //        {
+        //            yield return listA[i];
+        //        }
+        //        if(i < listB.Count)
+        //        {
+        //            yield return listB[i];
+        //        }
+        //    }
+        //}
+        
+
         /// <summary>
         /// Converts contents of <see cref="CustomList{T}" /> to string. String format includes $"elements[0], elements[1], elements[3]..." for all items.
         /// </summary>
@@ -265,6 +292,11 @@ namespace CustomListClass
         public IEnumerator GetEnumerator()
         {
             return (IEnumerator)this;
+
+            //for (int i = 0; i < count; i++)
+            //{
+            //    yield return elements[i];
+            //}
         }
         // for IEnumerator
         public bool MoveNext()
@@ -285,8 +317,9 @@ namespace CustomListClass
                 return elements[position];
             }
         }
-    
-    
+
+        
+
         public void Sort()
         {
             QuickSort(elements, 0, Count - 1);
@@ -302,7 +335,6 @@ namespace CustomListClass
                 QuickSort(array, pi + 1, end);
             }
         }
-
         public int Partition(T[] array, int start, int end)
         {
             int smallerIndex = (start - 1);
@@ -330,8 +362,54 @@ namespace CustomListClass
 
         }
 
+        public int IndexOf(T item)
+        {
+            int lowerBounds = 0;
+            for(int i = lowerBounds; i < Count; i++)
+            {
+                if(elements[i].Equals(item))
+                {
+                    return i;
+                }
+            }
+            // Return -1 if not found.
+            return -1;
+        }
+        public int GetLowerBounds()
+        {
 
-    
+            return -1;
+        }
+
+        public void Insert(int index, T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveAt(int index)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Clear()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Contains(T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CopyTo(T[] array, int arrayIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
