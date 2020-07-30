@@ -134,7 +134,6 @@ namespace CustomListClass
                     zipped.Add(listB[i]);
                 }
             }
-
             return zipped;
         }
 
@@ -170,7 +169,6 @@ namespace CustomListClass
             {
                 return "Empty Custom List";
             }
-
             // Set initial capacity to 10 per item
             StringBuilder sb = new StringBuilder(Count * 10);
             sb.Append(elements[0]);
@@ -182,8 +180,6 @@ namespace CustomListClass
                     sb.Append(elements[i]);
                 }
             }
-
-
             return sb.ToString();
         }
         /// <summary>
@@ -204,8 +200,6 @@ namespace CustomListClass
             {
                 sum.Add(second[i]);
             }
-
-
             return sum;
         }
         /// <summary>
@@ -216,7 +210,6 @@ namespace CustomListClass
         /// <returns></returns>
         public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
         {
-
             CustomList<T> difference = new CustomList<T>();
             difference += minuend;
 
@@ -239,7 +232,6 @@ namespace CustomListClass
             {
                 difference.Remove(minuend[valuesToSubtract[i]]);
             }
-
             return difference;
         }
         /// <summary>
@@ -532,7 +524,7 @@ namespace CustomListClass
 
         public bool Contains(T item)
         {
-            throw new NotImplementedException();
+            return IndexOf(item) != -1 ? true : false;
         }
 
         public void CopyTo(T[] array, int arrayIndex)
