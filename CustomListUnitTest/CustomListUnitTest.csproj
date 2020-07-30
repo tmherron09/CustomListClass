@@ -52,6 +52,7 @@
     <Compile Include="AddMethodTests.cs" />
     <Compile Include="ClearTests.cs" />
     <Compile Include="ContainsTests.cs" />
+    <Compile Include="CopyToTests.cs" />
     <Compile Include="IndexOfTests.cs" />
     <Compile Include="InsertTests.cs" />
     <Compile Include="IteratorTests.cs" />

@@ -531,6 +531,10 @@ namespace CustomListClass
         {
             throw new NotImplementedException();
         }
+        public void CopyTo(int index, T[] array, int arrayIndex, int count)
+        {
+            throw new NotImplementedException();
+        }
 
         IEnumerator<T> IEnumerable<T>.GetEnumerator()
         {
