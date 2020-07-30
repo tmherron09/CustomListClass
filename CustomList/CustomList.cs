@@ -105,19 +105,11 @@ namespace CustomListClass
         /// <returns>Return true if an Item&lt;T&gt; with value successfully removed. Returns false if no object with matching value is found within CustomList&lt;T&gt;.</returns>
         public bool Remove(T value)
         {
-            for (int i = 0; i < Count; i++)
+            int index = IndexOf(value);
+            if(index != -1 && index < Count)
             {
-                if (elements[i].Equals(value))
-                {
-                    while (i != Count - 1)
-                    {
-                        elements[i] = elements[i + 1];
-                        i++;
-                    }
-                    elements[i] = default(T);
-                    count--;
-                    return true;
-                }
+                RemoveAt(index);
+                return true;
             }
             return false;
         }
@@ -469,9 +461,11 @@ namespace CustomListClass
                 itemIndex++;
             }
         }
+        
+        
         public void ShiftItems(int startIndex, int amount)
         {
-            if (startIndex < 0 || startIndex >= Capacity)
+            if (startIndex < 0 || startIndex > Count)
             {
                 throw new IndexOutOfRangeException();
             }
@@ -483,6 +477,8 @@ namespace CustomListClass
                 elements[i] = elements[i - amount];
             }
         }
+        
+        
         private void EnsureCapacity(int minimum)
         {
             if (Capacity < minimum)
@@ -527,7 +523,11 @@ namespace CustomListClass
 
         public void Clear()
         {
-            throw new NotImplementedException();
+            for(int i = 0; i < Count; i++)
+            {
+                elements[i] = default(T);
+            }
+            count = 0;
         }
 
         public bool Contains(T item)
