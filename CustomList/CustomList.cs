@@ -258,7 +258,20 @@ namespace CustomListClass
             }
             return true;
         }
-
+        /// <summary>
+        /// Returns a HashCode based on the sum of all object HashCodes in inner array, then adds HashCode for inner Array. WIP to make unique hashcode/best practice.
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            int hashCode = 0;
+            foreach(object obj in this)
+            {
+                hashCode += obj.GetHashCode();
+            }
+            hashCode += elements.GetHashCode();
+            return hashCode;
+        }
         int position = -1; // for iteration
         // IEnumerator and IEnumerable required methods
         // WIP deciphering between two methods.
