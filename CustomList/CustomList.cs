@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
+using System.Threading;
 
 namespace CustomListClass
 {
@@ -10,7 +12,7 @@ namespace CustomListClass
     /// Custom List class of Type Generic
     /// </summary>
     /// <typeparam name="T">Type of Item in CustomList</typeparam>
-    public class CustomList<T> : IEnumerable, IEnumerator, IList<T>, ICollection<T>
+    public class CustomList<T> : IEnumerable<T>, IEnumerable, IEnumerator, IList<T>, ICollection<T>, IReadOnlyCollection<T>, IReadOnlyList<T>, ICollection
     {
         /// <summary>
         /// Inner Array of <see cref="CustomList{T}" />
@@ -56,7 +58,35 @@ namespace CustomListClass
             }
         }
         // From ICollection
-        public bool IsReadOnly => false;
+        public bool IsReadOnly
+        {
+            get
+            {
+                return false;
+            }
+        }
+        //  This is not thread-safe
+        public bool IsSynchronized
+        {
+            get
+            {
+                return false;
+            }
+        }
+        //  Used in creating a Thread-Safe wrapper. Currently implenting same method as List<T>
+        //  See ICollection interface for more information
+        private object synchRoot;
+        public object SyncRoot
+        {
+            get
+            {
+                if(synchRoot == null)
+                {
+                    System.Threading.Interlocked.CompareExchange<object>(ref synchRoot, new object(), null);
+                }
+                return synchRoot;
+            }
+        }
         public T this[int i]
         {
             get
@@ -270,23 +300,13 @@ namespace CustomListClass
         // WIP deciphering between two methods.
         public IEnumerator GetEnumerator()
         {
-
             return (IEnumerator)this;
-
-            //return GetMyEnumerator();
-            //for (int i = 0; i < count; i++)
-            //{
-            //    yield return elements[i];
-            //}
         }
-        //public IEnumerator GetMyEnumerator()
-        //{
-        //    for (int i = 0; i < count; i++)
-        //    {
-        //        yield return elements[i];
-        //    }
-        //}
-        // for IEnumerator
+        //  Required by IList<T>
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            return (IEnumerator<T>)this;
+        }
         public bool MoveNext()
         {
             position++;
@@ -305,6 +325,7 @@ namespace CustomListClass
                 return elements[position];
             }
         }
+
 
 
         public void Sort()
@@ -348,6 +369,116 @@ namespace CustomListClass
             return smallerIndex + 1;
 
         }
+
+        public void BubbleSort()
+        {
+            int lastIndex = IndexOfLast;
+
+            while (lastIndex != 0)
+            {
+                for (int i = 0; i <= lastIndex - 1; i++)
+                {
+                    if (Comparer<T>.Default.Compare(elements[i], elements[i + 1]) > 0)
+                    {
+                        T temp = elements[i];
+                        elements[i] = elements[i + 1];
+                        elements[i + 1] = temp;
+                    }
+                }
+                lastIndex--;
+            }
+        }
+
+        public void MergeSort()
+        {
+            T[] merger = new T[Count];
+            CopyTo(merger, 0);
+            elements = MergeSorMethod(merger, Count);
+        }
+
+        public T[] MergeSorMethod(T[] inputArray, int arraySize)
+        {
+            T[] outputArray = new T[arraySize];
+            if (arraySize == 1)
+            {
+                return inputArray;
+            }
+            T[] xArray = new T[arraySize / 2];
+            int yArraySize = arraySize % 2 == 0 ? arraySize / 2 : (arraySize / 2) + 1;
+            T[] yArray = new T[yArraySize];
+            if (arraySize != 2)
+            {
+                int middleIndex = arraySize / 2;
+
+                for (int i = 0; i < middleIndex; i++)
+                {
+                    xArray[i] = inputArray[i];
+                }
+                int counter = 0;
+                for (int i = middleIndex; i < arraySize; i++)
+                {
+                    yArray[counter] = inputArray[i];
+                    counter++;
+                }
+            }
+            else
+            {
+                xArray = new T[] { inputArray[0] };
+                yArray = new T[] { inputArray[1] };
+            }
+
+            xArray = MergeSorMethod(xArray, xArray.Length);
+            yArray = MergeSorMethod(yArray, yArray.Length);
+
+
+            outputArray = MergeArrays(xArray, yArray);
+
+            return outputArray;
+        }
+
+        public T[] MergeArrays(T[] xArray, T[] yArray)
+        {
+            int length = xArray.Length + yArray.Length;
+            T[] sortedArray = new T[length];
+
+            int sortedIndex = 0;
+            int xArrayIndex = 0;
+            int yArrayIndex = 0;
+            while (sortedIndex < length)
+            {
+                if (xArrayIndex < xArray.Length && yArrayIndex < yArray.Length)
+                {
+                    if (Comparer<T>.Default.Compare(xArray[xArrayIndex],yArray[yArrayIndex]) < 0)
+                    {
+                        sortedArray[sortedIndex] = xArray[xArrayIndex];
+                        xArrayIndex++;
+                        sortedIndex++;
+                    }
+                    else
+                    {
+                        sortedArray[sortedIndex] = yArray[yArrayIndex];
+                        yArrayIndex++;
+                        sortedIndex++;
+                    }
+                }
+                else if (xArrayIndex < xArray.Length)
+                {
+                    sortedArray[sortedIndex] = xArray[xArrayIndex];
+                    xArrayIndex++;
+                    sortedIndex++;
+                }
+                else if (yArrayIndex < yArray.Length)
+                {
+                    sortedArray[sortedIndex] = yArray[yArrayIndex];
+                    yArrayIndex++;
+                    sortedIndex++;
+                }
+            }
+            return sortedArray;
+        }
+
+
+
 
         public int IndexOf(T item)
         {
@@ -507,7 +638,6 @@ namespace CustomListClass
             CopyTo(newElements, 0);
             // Assign to new array.
             elements = newElements;
-
         }
 
 
@@ -538,6 +668,7 @@ namespace CustomListClass
             return IndexOf(item) != -1 ? true : false;
         }
 
+        
         public void CopyTo(T[] array, int arrayIndex)
         {
             if (arrayIndex >= array.Length || arrayIndex + IndexOfLast >= array.Length)
@@ -572,11 +703,26 @@ namespace CustomListClass
                 arrayIndex++;
             }
         }
-
-        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        // Extra implementation for ICollection interface
+        public void CopyTo(Array array, int arrayIndex)
         {
-            throw new NotImplementedException();
+            if (arrayIndex >= array.Length || arrayIndex + IndexOfLast >= array.Length)
+            {
+                throw new ArgumentException();
+            }
+            if (arrayIndex < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+            foreach (object item in this)
+            {
+                array.SetValue(item, arrayIndex);
+                arrayIndex++;
+            }
+            // Bug with Foreach/IEnumerator not calling Reset on an empty list or null.
+            Reset();
         }
+
     }
 }
 
