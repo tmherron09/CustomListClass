@@ -32,7 +32,7 @@ namespace CustomListUnitTest
 
             //  Act
             actual = minuend - subtrahend;
-
+            
 
             //  Assert
             Assert.AreEqual(expected, actual);

@@ -370,6 +370,7 @@ namespace CustomListClass
 
         }
 
+
         public void BubbleSort()
         {
             int lastIndex = IndexOfLast;
@@ -389,13 +390,13 @@ namespace CustomListClass
             }
         }
 
+
         public void MergeSort()
         {
             T[] merger = new T[Count];
             CopyTo(merger, 0);
             elements = MergeSorMethod(merger, Count);
         }
-
         public T[] MergeSorMethod(T[] inputArray, int arraySize)
         {
             T[] outputArray = new T[arraySize];
@@ -435,7 +436,6 @@ namespace CustomListClass
 
             return outputArray;
         }
-
         public T[] MergeArrays(T[] xArray, T[] yArray)
         {
             int length = xArray.Length + yArray.Length;
