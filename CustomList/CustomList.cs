@@ -173,28 +173,6 @@ namespace CustomListClass
             return zipped;
         }
 
-        //public void ZipOnSelf(CustomList<T> listB)
-        //{
-        //    CustomList<T> zipped = new CustomList<T>();
-        //    zipped.Add(ZipYield(this, listB);
-        //}
-        //public object ZipYield(CustomList<T> listA, CustomList<T> listB)
-        //{
-        //    int longerLength = listA.Count > listB.Count ? listA.Count : listB.Count;
-        //    for(int i = 0; i < longerLength; i++)
-        //    {
-        //        if(i < listA.Count)
-        //        {
-        //            yield return listA[i];
-        //        }
-        //        if(i < listB.Count)
-        //        {
-        //            yield return listB[i];
-        //        }
-        //    }
-        //}
-
-
         /// <summary>
         /// Converts contents of <see cref="CustomList{T}" /> to string. String format includes $"elements[0], elements[1], elements[3]..." for all items.
         /// </summary>
@@ -325,7 +303,6 @@ namespace CustomListClass
                 return elements[position];
             }
         }
-
 
 
         public void Sort()
