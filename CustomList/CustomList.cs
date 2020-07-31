@@ -27,7 +27,13 @@ namespace CustomListClass
         /// <summary>
         /// Public readonly value of numer of items in <see cref="CustomList{T}" />
         /// </summary>
-        public int Count { get { return count; } }
+        public int Count
+        {
+            get
+            {
+                return count;
+            }
+        }
         /// <summary>
         /// Publicly accessible length of iternal array elements
         /// </summary>
@@ -210,12 +216,12 @@ namespace CustomListClass
         /// <returns></returns>
         public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
         {
-            if(minuend == subtrahend)
+            if (minuend == subtrahend)
             {
                 minuend.Clear();
                 return minuend;
             }
-            foreach(T item in subtrahend)
+            foreach (T item in subtrahend)
             {
                 minuend.Remove(item);
             }
@@ -252,7 +258,7 @@ namespace CustomListClass
         public override int GetHashCode()
         {
             int hashCode = 0;
-            foreach(object obj in this)
+            foreach (object obj in this)
             {
                 hashCode += obj.GetHashCode();
             }
@@ -289,7 +295,7 @@ namespace CustomListClass
         // for IEnumerable
         public void Reset()
         {
-            position = 0;
+            position = -1;
         }
         // for IEnumerable
         public object Current
@@ -303,7 +309,7 @@ namespace CustomListClass
 
         public void Sort()
         {
-            QuickSort(elements, 0, Count - 1);
+            QuickSort(elements, 0, IndexOfLast);
         }
         public void QuickSort(T[] array, int start, int end)
         {
@@ -473,7 +479,7 @@ namespace CustomListClass
             EnsureCapacity(Count + amount);
 
             count += amount;
-            for (int i = (Count - 1); i >= startIndex + amount; i--)
+            for (int i = (IndexOfLast); i >= startIndex + amount; i--)
             {
                 elements[i] = elements[i - amount];
             }
@@ -498,11 +504,7 @@ namespace CustomListClass
                 return;
             }
             T[] newElements = new T[newCapacity];
-            // Don't user Array.CopyTo()
-            for (int i = 0; i < Count; i++)
-            {
-                newElements[i] = elements[i];
-            }
+            CopyTo(newElements, 0);
             // Assign to new array.
             elements = newElements;
 
@@ -513,11 +515,11 @@ namespace CustomListClass
         {
             if (index >= 0 && index < Count)
             {
-                for (int i = index; i < Count - 1; i++)
+                for (int i = index; i < IndexOfLast; i++)
                 {
                     elements[i] = elements[i + 1];
                 }
-                elements[Count - 1] = default(T);
+                elements[IndexOfLast] = default(T);
                 count--;
             }
         }
@@ -538,7 +540,7 @@ namespace CustomListClass
 
         public void CopyTo(T[] array, int arrayIndex)
         {
-            if (arrayIndex >= array.Length || arrayIndex + Count - 1 >= array.Length)
+            if (arrayIndex >= array.Length || arrayIndex + IndexOfLast >= array.Length)
             {
                 throw new ArgumentException();
             }
@@ -551,6 +553,8 @@ namespace CustomListClass
                 array[arrayIndex] = item;
                 arrayIndex++;
             }
+            // Bug with Foreach/IEnumerator not calling Reset on an empty list or null.
+            Reset();
         }
         public void CopyTo(int index, T[] array, int arrayIndex, int count)
         {
