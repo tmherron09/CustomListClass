@@ -1,0 +1,4179 @@
+### YamlMime:ManagedReference
+items:
+- uid: CustomListClass.CustomList`1
+  commentId: T:CustomListClass.CustomList`1
+  id: CustomList`1
+  parent: CustomListClass
+  children:
+  - CustomListClass.CustomList`1.#ctor
+  - CustomListClass.CustomList`1.#ctor(System.Int32)
+  - CustomListClass.CustomList`1.Add(`0)
+  - CustomListClass.CustomList`1.BubbleSort
+  - CustomListClass.CustomList`1.Capacity
+  - CustomListClass.CustomList`1.Clear
+  - CustomListClass.CustomList`1.Contains(`0)
+  - CustomListClass.CustomList`1.CopyTo(`0[],System.Int32)
+  - CustomListClass.CustomList`1.CopyTo(System.Array,System.Int32)
+  - CustomListClass.CustomList`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  - CustomListClass.CustomList`1.Count
+  - CustomListClass.CustomList`1.Current
+  - CustomListClass.CustomList`1.Equals(System.Object)
+  - CustomListClass.CustomList`1.GetEnumerator
+  - CustomListClass.CustomList`1.GetHashCode
+  - CustomListClass.CustomList`1.GetLowerBounds(System.Int32)
+  - CustomListClass.CustomList`1.GetUpperBounds(System.Int32,System.Int32)
+  - CustomListClass.CustomList`1.IncreaseCapacity(System.Int32)
+  - CustomListClass.CustomList`1.IndexOf(`0)
+  - CustomListClass.CustomList`1.IndexOf(`0,System.Int32)
+  - CustomListClass.CustomList`1.IndexOf(`0,System.Int32,System.Int32)
+  - CustomListClass.CustomList`1.IndexOfLast
+  - CustomListClass.CustomList`1.Insert(System.Int32,`0)
+  - CustomListClass.CustomList`1.Insert(System.Int32,`0[])
+  - CustomListClass.CustomList`1.Insert(System.Int32,CustomListClass.CustomList{`0})
+  - CustomListClass.CustomList`1.IsReadOnly
+  - CustomListClass.CustomList`1.IsSynchronized
+  - CustomListClass.CustomList`1.Item(System.Int32)
+  - CustomListClass.CustomList`1.MergeArrays(`0[],`0[])
+  - CustomListClass.CustomList`1.MergeSorMethod(`0[],System.Int32)
+  - CustomListClass.CustomList`1.MergeSort
+  - CustomListClass.CustomList`1.MoveNext
+  - CustomListClass.CustomList`1.op_Addition(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  - CustomListClass.CustomList`1.op_Subtraction(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  - CustomListClass.CustomList`1.Partition(`0[],System.Int32,System.Int32)
+  - CustomListClass.CustomList`1.QuickSort(`0[],System.Int32,System.Int32)
+  - CustomListClass.CustomList`1.Remove(`0)
+  - CustomListClass.CustomList`1.RemoveAt(System.Int32)
+  - CustomListClass.CustomList`1.Reset
+  - CustomListClass.CustomList`1.ShiftItems(System.Int32,System.Int32)
+  - CustomListClass.CustomList`1.Sort
+  - CustomListClass.CustomList`1.SyncRoot
+  - CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - CustomListClass.CustomList`1.ToString
+  - CustomListClass.CustomList`1.Zip(CustomListClass.CustomList{`0})
+  langs:
+  - csharp
+  - vb
+  name: CustomList<T>
+  nameWithType: CustomList<T>
+  fullName: CustomListClass.CustomList<T>
+  type: Class
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: CustomList
+    path: CustomList.cs
+    startLine: 14
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nCustom List class of Type Generic\n"
+  example: []
+  syntax:
+    content: 'public class CustomList<T> : IEnumerator, IList<T>, ICollection<T>, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, ICollection, IEnumerable'
+    typeParameters:
+    - id: T
+      description: Type of Item in CustomList
+    content.vb: >-
+      Public Class CustomList(Of T)
+
+          Implements IEnumerator, IList(Of T), ICollection(Of T), IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerator
+  - System.Collections.Generic.IList{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IReadOnlyList{{T}}
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: CustomList(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: CustomListClass.CustomList(Of T)
+  name.vb: CustomList(Of T)
+- uid: CustomListClass.CustomList`1.Count
+  commentId: P:CustomListClass.CustomList`1.Count
+  id: Count
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: CustomList<T>.Count
+  fullName: CustomListClass.CustomList<T>.Count
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Count
+    path: CustomList.cs
+    startLine: 31
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nPublic readonly value of numer of items in <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: CustomListClass.CustomList`1.Count*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Count
+  - System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  - System.Collections.ICollection.Count
+  nameWithType.vb: CustomList(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).Count
+- uid: CustomListClass.CustomList`1.Capacity
+  commentId: P:CustomListClass.CustomList`1.Capacity
+  id: Capacity
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: CustomList<T>.Capacity
+  fullName: CustomListClass.CustomList<T>.Capacity
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Capacity
+    path: CustomList.cs
+    startLine: 41
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nPublicly accessible length of iternal array elements\n"
+  example: []
+  syntax:
+    content: public int Capacity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Capacity As Integer
+  overload: CustomListClass.CustomList`1.Capacity*
+  nameWithType.vb: CustomList(Of T).Capacity
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).Capacity
+- uid: CustomListClass.CustomList`1.IndexOfLast
+  commentId: P:CustomListClass.CustomList`1.IndexOfLast
+  id: IndexOfLast
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOfLast
+  nameWithType: CustomList<T>.IndexOfLast
+  fullName: CustomListClass.CustomList<T>.IndexOfLast
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: IndexOfLast
+    path: CustomList.cs
+    startLine: 52
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nThe index position of the last element in the array.\n"
+  example: []
+  syntax:
+    content: public int IndexOfLast { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property IndexOfLast As Integer
+  overload: CustomListClass.CustomList`1.IndexOfLast*
+  nameWithType.vb: CustomList(Of T).IndexOfLast
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).IndexOfLast
+- uid: CustomListClass.CustomList`1.IsReadOnly
+  commentId: P:CustomListClass.CustomList`1.IsReadOnly
+  id: IsReadOnly
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: CustomList<T>.IsReadOnly
+  fullName: CustomListClass.CustomList<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: IsReadOnly
+    path: CustomList.cs
+    startLine: 60
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: CustomListClass.CustomList`1.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  nameWithType.vb: CustomList(Of T).IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).IsReadOnly
+- uid: CustomListClass.CustomList`1.IsSynchronized
+  commentId: P:CustomListClass.CustomList`1.IsSynchronized
+  id: IsSynchronized
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IsSynchronized
+  nameWithType: CustomList<T>.IsSynchronized
+  fullName: CustomListClass.CustomList<T>.IsSynchronized
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: IsSynchronized
+    path: CustomList.cs
+    startLine: 68
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public bool IsSynchronized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSynchronized As Boolean
+  overload: CustomListClass.CustomList`1.IsSynchronized*
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+  nameWithType.vb: CustomList(Of T).IsSynchronized
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).IsSynchronized
+- uid: CustomListClass.CustomList`1.SyncRoot
+  commentId: P:CustomListClass.CustomList`1.SyncRoot
+  id: SyncRoot
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: SyncRoot
+  nameWithType: CustomList<T>.SyncRoot
+  fullName: CustomListClass.CustomList<T>.SyncRoot
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: SyncRoot
+    path: CustomList.cs
+    startLine: 78
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public object SyncRoot { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property SyncRoot As Object
+  overload: CustomListClass.CustomList`1.SyncRoot*
+  implements:
+  - System.Collections.ICollection.SyncRoot
+  nameWithType.vb: CustomList(Of T).SyncRoot
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).SyncRoot
+- uid: CustomListClass.CustomList`1.Item(System.Int32)
+  commentId: P:CustomListClass.CustomList`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: CustomList<T>.Item[Int32]
+  fullName: CustomListClass.CustomList<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: this[]
+    path: CustomList.cs
+    startLine: 89
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public T this[int i] { get; set; }
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Property Item(i As Integer) As T
+  overload: CustomListClass.CustomList`1.Item*
+  implements:
+  - System.Collections.Generic.IList{{T}}.Item(System.Int32)
+  - System.Collections.Generic.IReadOnlyList{{T}}.Item(System.Int32)
+  nameWithType.vb: CustomList(Of T).Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: CustomListClass.CustomList`1.#ctor
+  commentId: M:CustomListClass.CustomList`1.#ctor
+  id: '#ctor'
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: CustomList()
+  nameWithType: CustomList<T>.CustomList()
+  fullName: CustomListClass.CustomList<T>.CustomList()
+  type: Constructor
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: .ctor
+    path: CustomList.cs
+    startLine: 111
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nInitializes a new instance of <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref> Class\n"
+  example: []
+  syntax:
+    content: public CustomList()
+    content.vb: Public Sub New
+  overload: CustomListClass.CustomList`1.#ctor*
+  nameWithType.vb: CustomList(Of T).CustomList()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).CustomList()
+- uid: CustomListClass.CustomList`1.#ctor(System.Int32)
+  commentId: M:CustomListClass.CustomList`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: CustomList(Int32)
+  nameWithType: CustomList<T>.CustomList(Int32)
+  fullName: CustomListClass.CustomList<T>.CustomList(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: .ctor
+    path: CustomList.cs
+    startLine: 120
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nInitializes a new instance of <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref> Class that is empty and has specified starting capacity. \n"
+  example: []
+  syntax:
+    content: public CustomList(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: Value to initialize capacity.
+    content.vb: Public Sub New(capacity As Integer)
+  overload: CustomListClass.CustomList`1.#ctor*
+  nameWithType.vb: CustomList(Of T).CustomList(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).CustomList(System.Int32)
+- uid: CustomListClass.CustomList`1.Add(`0)
+  commentId: M:CustomListClass.CustomList`1.Add(`0)
+  id: Add(`0)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: CustomList<T>.Add(T)
+  fullName: CustomListClass.CustomList<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Add
+    path: CustomList.cs
+    startLine: 129
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nMethod to add a <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref> to end of <code data-dev-comment-type=\"paramref\" class=\"paramref\">this</code> inner array.\n"
+  example: []
+  syntax:
+    content: public void Add(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: <xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref> to Add to end of inner array.
+    content.vb: Public Sub Add(value As T)
+  overload: CustomListClass.CustomList`1.Add*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  nameWithType.vb: CustomList(Of T).Add(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Add(T)
+- uid: CustomListClass.CustomList`1.Remove(`0)
+  commentId: M:CustomListClass.CustomList`1.Remove(`0)
+  id: Remove(`0)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: CustomList<T>.Remove(T)
+  fullName: CustomListClass.CustomList<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Remove
+    path: CustomList.cs
+    startLine: 141
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nRemoves the first T value matching object from the <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public bool Remove(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value of the matching object to remove from the instance of <xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: Return true if an Item&lt;T> with value successfully removed. Returns false if no object with matching value is found within CustomList&lt;T>.
+    content.vb: Public Function Remove(value As T) As Boolean
+  overload: CustomListClass.CustomList`1.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  nameWithType.vb: CustomList(Of T).Remove(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Remove(T)
+- uid: CustomListClass.CustomList`1.Zip(CustomListClass.CustomList{`0})
+  commentId: M:CustomListClass.CustomList`1.Zip(CustomListClass.CustomList{`0})
+  id: Zip(CustomListClass.CustomList{`0})
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Zip(CustomList<T>)
+  nameWithType: CustomList<T>.Zip(CustomList<T>)
+  fullName: CustomListClass.CustomList<T>.Zip(CustomListClass.CustomList<T>)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Zip
+    path: CustomList.cs
+    startLine: 156
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nZips together a second <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref>. New <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref> will contain <code data-dev-comment-type=\"paramref\" class=\"paramref\">this</code> first item in inner array, proceeded by <code data-dev-comment-type=\"paramref\" class=\"paramref\">listB</code> first item in inner array and repeat until all items have been added to new <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref>. Trailing items will be added to returned <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public CustomList<T> Zip(CustomList<T> listB)
+    parameters:
+    - id: listB
+      type: CustomListClass.CustomList`1
+      description: <xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref> to Zip
+    return:
+      type: CustomListClass.CustomList`1
+      description: 'New <xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref> of <code data-dev-comment-type="paramref" class="paramref">this</code> zipped with <code data-dev-comment-type="paramref" class="paramref">listB</code> '
+    content.vb: Public Function Zip(listB As CustomList(Of T)) As CustomList(Of T)
+  overload: CustomListClass.CustomList`1.Zip*
+  nameWithType.vb: CustomList(Of T).Zip(CustomList(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Zip(CustomListClass.CustomList(Of T))
+  name.vb: Zip(CustomList(Of T))
+- uid: CustomListClass.CustomList`1.ToString
+  commentId: M:CustomListClass.CustomList`1.ToString
+  id: ToString
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: CustomList<T>.ToString()
+  fullName: CustomListClass.CustomList<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: ToString
+    path: CustomList.cs
+    startLine: 179
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nConverts contents of <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref> to string. String format includes $&quot;elements[0], elements[1], elements[3]...&quot; for all items.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: String of &quot;elements[0], elements[1], elements[3]...&quot;
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: CustomListClass.CustomList`1.ToString*
+  nameWithType.vb: CustomList(Of T).ToString()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: CustomListClass.CustomList(Of T).ToString()
+- uid: CustomListClass.CustomList`1.op_Addition(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  commentId: M:CustomListClass.CustomList`1.op_Addition(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  id: op_Addition(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Addition(CustomList<T>, CustomList<T>)
+  nameWithType: CustomList<T>.Addition(CustomList<T>, CustomList<T>)
+  fullName: CustomListClass.CustomList<T>.Addition(CustomListClass.CustomList<T>, CustomListClass.CustomList<T>)
+  type: Operator
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: op_Addition
+    path: CustomList.cs
+    startLine: 204
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nDefines + operator overload for adding two <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static CustomList<T> operator +(CustomList<T> first, CustomList<T> second)
+    parameters:
+    - id: first
+      type: CustomListClass.CustomList`1
+      description: ''
+    - id: second
+      type: CustomListClass.CustomList`1
+      description: ''
+    return:
+      type: CustomListClass.CustomList`1
+      description: New <xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref> of both inner arrays joined.
+    content.vb: Public Shared Operator +(first As CustomList(Of T), second As CustomList(Of T)) As CustomList(Of T)
+  overload: CustomListClass.CustomList`1.op_Addition*
+  nameWithType.vb: CustomList(Of T).Addition(CustomList(Of T), CustomList(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: CustomListClass.CustomList(Of T).Addition(CustomListClass.CustomList(Of T), CustomListClass.CustomList(Of T))
+  name.vb: Addition(CustomList(Of T), CustomList(Of T))
+- uid: CustomListClass.CustomList`1.op_Subtraction(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  commentId: M:CustomListClass.CustomList`1.op_Subtraction(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  id: op_Subtraction(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Subtraction(CustomList<T>, CustomList<T>)
+  nameWithType: CustomList<T>.Subtraction(CustomList<T>, CustomList<T>)
+  fullName: CustomListClass.CustomList<T>.Subtraction(CustomListClass.CustomList<T>, CustomListClass.CustomList<T>)
+  type: Operator
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: op_Subtraction
+    path: CustomList.cs
+    startLine: 224
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nDefines - operator overload for subtracting two <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static CustomList<T> operator -(CustomList<T> minuend, CustomList<T> subtrahend)
+    parameters:
+    - id: minuend
+      type: CustomListClass.CustomList`1
+      description: <xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref> being subtracted from.
+    - id: subtrahend
+      type: CustomListClass.CustomList`1
+      description: '<xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref> to subtract from <code data-dev-comment-type="paramref" class="paramref">minuend</code> '
+    return:
+      type: CustomListClass.CustomList`1
+      description: ''
+    content.vb: Public Shared Operator -(minuend As CustomList(Of T), subtrahend As CustomList(Of T)) As CustomList(Of T)
+  overload: CustomListClass.CustomList`1.op_Subtraction*
+  nameWithType.vb: CustomList(Of T).Subtraction(CustomList(Of T), CustomList(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: CustomListClass.CustomList(Of T).Subtraction(CustomListClass.CustomList(Of T), CustomListClass.CustomList(Of T))
+  name.vb: Subtraction(CustomList(Of T), CustomList(Of T))
+- uid: CustomListClass.CustomList`1.Equals(System.Object)
+  commentId: M:CustomListClass.CustomList`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: CustomList<T>.Equals(Object)
+  fullName: CustomListClass.CustomList<T>.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Equals
+    path: CustomList.cs
+    startLine: 244
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nDetermines whether the specified object as a <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance. Similiar to Enumerable.SequenceEqual as only items in Count are compared and not Capacity.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The <xref href="CustomListClass.CustomList%601" data-throw-if-not-resolved="false"></xref> to compare with this instance.
+    return:
+      type: System.Boolean
+      description: "\nTrue if the specified <xref href=\"CustomListClass.CustomList%601\" data-throw-if-not-resolved=\"false\"></xref> items in elements array are equal to at the same indexs of this instance; Else, false \n"
+    content.vb: Public Overrides Function Equals(value As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: CustomListClass.CustomList`1.Equals*
+  nameWithType.vb: CustomList(Of T).Equals(Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: CustomListClass.CustomList(Of T).Equals(System.Object)
+- uid: CustomListClass.CustomList`1.GetHashCode
+  commentId: M:CustomListClass.CustomList`1.GetHashCode
+  id: GetHashCode
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CustomList<T>.GetHashCode()
+  fullName: CustomListClass.CustomList<T>.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: GetHashCode
+    path: CustomList.cs
+    startLine: 265
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  summary: "\nReturns a HashCode based on the sum of all object HashCodes in inner array, then adds HashCode for inner Array. WIP to make unique hashcode/best practice.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: CustomListClass.CustomList`1.GetHashCode*
+  nameWithType.vb: CustomList(Of T).GetHashCode()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: CustomListClass.CustomList(Of T).GetHashCode()
+- uid: CustomListClass.CustomList`1.GetEnumerator
+  commentId: M:CustomListClass.CustomList`1.GetEnumerator
+  id: GetEnumerator
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: CustomList<T>.GetEnumerator()
+  fullName: CustomListClass.CustomList<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: GetEnumerator
+    path: CustomList.cs
+    startLine: 278
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function GetEnumerator As IEnumerator
+  overload: CustomListClass.CustomList`1.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: CustomList(Of T).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).GetEnumerator()
+- uid: CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  commentId: M:CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  isEii: true
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable<T>.GetEnumerator()
+  nameWithType: CustomList<T>.IEnumerable<T>.GetEnumerator()
+  fullName: CustomListClass.CustomList<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    path: CustomList.cs
+    startLine: 283
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+  overload: CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: CustomList(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullName.vb: CustomListClass.CustomList(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+- uid: CustomListClass.CustomList`1.MoveNext
+  commentId: M:CustomListClass.CustomList`1.MoveNext
+  id: MoveNext
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: MoveNext()
+  nameWithType: CustomList<T>.MoveNext()
+  fullName: CustomListClass.CustomList<T>.MoveNext()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: MoveNext
+    path: CustomList.cs
+    startLine: 287
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public bool MoveNext()
+    return:
+      type: System.Boolean
+    content.vb: Public Function MoveNext As Boolean
+  overload: CustomListClass.CustomList`1.MoveNext*
+  implements:
+  - System.Collections.IEnumerator.MoveNext
+  nameWithType.vb: CustomList(Of T).MoveNext()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).MoveNext()
+- uid: CustomListClass.CustomList`1.Reset
+  commentId: M:CustomListClass.CustomList`1.Reset
+  id: Reset
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: CustomList<T>.Reset()
+  fullName: CustomListClass.CustomList<T>.Reset()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Reset
+    path: CustomList.cs
+    startLine: 293
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+  overload: CustomListClass.CustomList`1.Reset*
+  implements:
+  - System.Collections.IEnumerator.Reset
+  nameWithType.vb: CustomList(Of T).Reset()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Reset()
+- uid: CustomListClass.CustomList`1.Current
+  commentId: P:CustomListClass.CustomList`1.Current
+  id: Current
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: CustomList<T>.Current
+  fullName: CustomListClass.CustomList<T>.Current
+  type: Property
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Current
+    path: CustomList.cs
+    startLine: 298
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public object Current { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property Current As Object
+  overload: CustomListClass.CustomList`1.Current*
+  implements:
+  - System.Collections.IEnumerator.Current
+  nameWithType.vb: CustomList(Of T).Current
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).Current
+- uid: CustomListClass.CustomList`1.Sort
+  commentId: M:CustomListClass.CustomList`1.Sort
+  id: Sort
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Sort()
+  nameWithType: CustomList<T>.Sort()
+  fullName: CustomListClass.CustomList<T>.Sort()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Sort
+    path: CustomList.cs
+    startLine: 307
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void Sort()
+    content.vb: Public Sub Sort
+  overload: CustomListClass.CustomList`1.Sort*
+  nameWithType.vb: CustomList(Of T).Sort()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Sort()
+- uid: CustomListClass.CustomList`1.QuickSort(`0[],System.Int32,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.QuickSort(`0[],System.Int32,System.Int32)
+  id: QuickSort(`0[],System.Int32,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: QuickSort(T[], Int32, Int32)
+  nameWithType: CustomList<T>.QuickSort(T[], Int32, Int32)
+  fullName: CustomListClass.CustomList<T>.QuickSort(T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: QuickSort
+    path: CustomList.cs
+    startLine: 311
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void QuickSort(T[] array, int start, int end)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: start
+      type: System.Int32
+    - id: end
+      type: System.Int32
+    content.vb: Public Sub QuickSort(array As T(), start As Integer, end As Integer)
+  overload: CustomListClass.CustomList`1.QuickSort*
+  nameWithType.vb: CustomList(Of T).QuickSort(T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).QuickSort(T(), System.Int32, System.Int32)
+  name.vb: QuickSort(T(), Int32, Int32)
+- uid: CustomListClass.CustomList`1.Partition(`0[],System.Int32,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.Partition(`0[],System.Int32,System.Int32)
+  id: Partition(`0[],System.Int32,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Partition(T[], Int32, Int32)
+  nameWithType: CustomList<T>.Partition(T[], Int32, Int32)
+  fullName: CustomListClass.CustomList<T>.Partition(T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Partition
+    path: CustomList.cs
+    startLine: 322
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public int Partition(T[] array, int start, int end)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: start
+      type: System.Int32
+    - id: end
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function Partition(array As T(), start As Integer, end As Integer) As Integer
+  overload: CustomListClass.CustomList`1.Partition*
+  nameWithType.vb: CustomList(Of T).Partition(T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Partition(T(), System.Int32, System.Int32)
+  name.vb: Partition(T(), Int32, Int32)
+- uid: CustomListClass.CustomList`1.BubbleSort
+  commentId: M:CustomListClass.CustomList`1.BubbleSort
+  id: BubbleSort
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: BubbleSort()
+  nameWithType: CustomList<T>.BubbleSort()
+  fullName: CustomListClass.CustomList<T>.BubbleSort()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: BubbleSort
+    path: CustomList.cs
+    startLine: 350
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void BubbleSort()
+    content.vb: Public Sub BubbleSort
+  overload: CustomListClass.CustomList`1.BubbleSort*
+  nameWithType.vb: CustomList(Of T).BubbleSort()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).BubbleSort()
+- uid: CustomListClass.CustomList`1.MergeSort
+  commentId: M:CustomListClass.CustomList`1.MergeSort
+  id: MergeSort
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: MergeSort()
+  nameWithType: CustomList<T>.MergeSort()
+  fullName: CustomListClass.CustomList<T>.MergeSort()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: MergeSort
+    path: CustomList.cs
+    startLine: 370
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void MergeSort()
+    content.vb: Public Sub MergeSort
+  overload: CustomListClass.CustomList`1.MergeSort*
+  nameWithType.vb: CustomList(Of T).MergeSort()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).MergeSort()
+- uid: CustomListClass.CustomList`1.MergeSorMethod(`0[],System.Int32)
+  commentId: M:CustomListClass.CustomList`1.MergeSorMethod(`0[],System.Int32)
+  id: MergeSorMethod(`0[],System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: MergeSorMethod(T[], Int32)
+  nameWithType: CustomList<T>.MergeSorMethod(T[], Int32)
+  fullName: CustomListClass.CustomList<T>.MergeSorMethod(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: MergeSorMethod
+    path: CustomList.cs
+    startLine: 376
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public T[] MergeSorMethod(T[] inputArray, int arraySize)
+    parameters:
+    - id: inputArray
+      type: '{T}[]'
+    - id: arraySize
+      type: System.Int32
+    return:
+      type: '{T}[]'
+    content.vb: Public Function MergeSorMethod(inputArray As T(), arraySize As Integer) As T()
+  overload: CustomListClass.CustomList`1.MergeSorMethod*
+  nameWithType.vb: CustomList(Of T).MergeSorMethod(T(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).MergeSorMethod(T(), System.Int32)
+  name.vb: MergeSorMethod(T(), Int32)
+- uid: CustomListClass.CustomList`1.MergeArrays(`0[],`0[])
+  commentId: M:CustomListClass.CustomList`1.MergeArrays(`0[],`0[])
+  id: MergeArrays(`0[],`0[])
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: MergeArrays(T[], T[])
+  nameWithType: CustomList<T>.MergeArrays(T[], T[])
+  fullName: CustomListClass.CustomList<T>.MergeArrays(T[], T[])
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: MergeArrays
+    path: CustomList.cs
+    startLine: 415
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public T[] MergeArrays(T[] xArray, T[] yArray)
+    parameters:
+    - id: xArray
+      type: '{T}[]'
+    - id: yArray
+      type: '{T}[]'
+    return:
+      type: '{T}[]'
+    content.vb: Public Function MergeArrays(xArray As T(), yArray As T()) As T()
+  overload: CustomListClass.CustomList`1.MergeArrays*
+  nameWithType.vb: CustomList(Of T).MergeArrays(T(), T())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).MergeArrays(T(), T())
+  name.vb: MergeArrays(T(), T())
+- uid: CustomListClass.CustomList`1.IndexOf(`0)
+  commentId: M:CustomListClass.CustomList`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T)
+  nameWithType: CustomList<T>.IndexOf(T)
+  fullName: CustomListClass.CustomList<T>.IndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: IndexOf
+    path: CustomList.cs
+    startLine: 459
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public int IndexOf(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Int32
+    content.vb: Public Function IndexOf(item As T) As Integer
+  overload: CustomListClass.CustomList`1.IndexOf*
+  implements:
+  - System.Collections.Generic.IList{{T}}.IndexOf({T})
+  nameWithType.vb: CustomList(Of T).IndexOf(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).IndexOf(T)
+- uid: CustomListClass.CustomList`1.IndexOf(`0,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.IndexOf(`0,System.Int32)
+  id: IndexOf(`0,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T, Int32)
+  nameWithType: CustomList<T>.IndexOf(T, Int32)
+  fullName: CustomListClass.CustomList<T>.IndexOf(T, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: IndexOf
+    path: CustomList.cs
+    startLine: 472
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public int IndexOf(T item, int startingIndex)
+    parameters:
+    - id: item
+      type: '{T}'
+    - id: startingIndex
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function IndexOf(item As T, startingIndex As Integer) As Integer
+  overload: CustomListClass.CustomList`1.IndexOf*
+  nameWithType.vb: CustomList(Of T).IndexOf(T, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).IndexOf(T, System.Int32)
+- uid: CustomListClass.CustomList`1.IndexOf(`0,System.Int32,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.IndexOf(`0,System.Int32,System.Int32)
+  id: IndexOf(`0,System.Int32,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T, Int32, Int32)
+  nameWithType: CustomList<T>.IndexOf(T, Int32, Int32)
+  fullName: CustomListClass.CustomList<T>.IndexOf(T, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: IndexOf
+    path: CustomList.cs
+    startLine: 490
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public int IndexOf(T item, int startingIndex, int count)
+    parameters:
+    - id: item
+      type: '{T}'
+    - id: startingIndex
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function IndexOf(item As T, startingIndex As Integer, count As Integer) As Integer
+  overload: CustomListClass.CustomList`1.IndexOf*
+  nameWithType.vb: CustomList(Of T).IndexOf(T, Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).IndexOf(T, System.Int32, System.Int32)
+- uid: CustomListClass.CustomList`1.GetLowerBounds(System.Int32)
+  commentId: M:CustomListClass.CustomList`1.GetLowerBounds(System.Int32)
+  id: GetLowerBounds(System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: GetLowerBounds(Int32)
+  nameWithType: CustomList<T>.GetLowerBounds(Int32)
+  fullName: CustomListClass.CustomList<T>.GetLowerBounds(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: GetLowerBounds
+    path: CustomList.cs
+    startLine: 515
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public int GetLowerBounds(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetLowerBounds(index As Integer) As Integer
+  overload: CustomListClass.CustomList`1.GetLowerBounds*
+  nameWithType.vb: CustomList(Of T).GetLowerBounds(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).GetLowerBounds(System.Int32)
+- uid: CustomListClass.CustomList`1.GetUpperBounds(System.Int32,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.GetUpperBounds(System.Int32,System.Int32)
+  id: GetUpperBounds(System.Int32,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: GetUpperBounds(Int32, Int32)
+  nameWithType: CustomList<T>.GetUpperBounds(Int32, Int32)
+  fullName: CustomListClass.CustomList<T>.GetUpperBounds(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: GetUpperBounds
+    path: CustomList.cs
+    startLine: 523
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public int GetUpperBounds(int lowerBounds, int count)
+    parameters:
+    - id: lowerBounds
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Function GetUpperBounds(lowerBounds As Integer, count As Integer) As Integer
+  overload: CustomListClass.CustomList`1.GetUpperBounds*
+  nameWithType.vb: CustomList(Of T).GetUpperBounds(Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).GetUpperBounds(System.Int32, System.Int32)
+- uid: CustomListClass.CustomList`1.Insert(System.Int32,`0)
+  commentId: M:CustomListClass.CustomList`1.Insert(System.Int32,`0)
+  id: Insert(System.Int32,`0)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(Int32, T)
+  nameWithType: CustomList<T>.Insert(Int32, T)
+  fullName: CustomListClass.CustomList<T>.Insert(System.Int32, T)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Insert
+    path: CustomList.cs
+    startLine: 534
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void Insert(int index, T item)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: item
+      type: '{T}'
+    content.vb: Public Sub Insert(index As Integer, item As T)
+  overload: CustomListClass.CustomList`1.Insert*
+  implements:
+  - System.Collections.Generic.IList{{T}}.Insert(System.Int32,{T})
+  nameWithType.vb: CustomList(Of T).Insert(Int32, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Insert(System.Int32, T)
+- uid: CustomListClass.CustomList`1.Insert(System.Int32,`0[])
+  commentId: M:CustomListClass.CustomList`1.Insert(System.Int32,`0[])
+  id: Insert(System.Int32,`0[])
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(Int32, T[])
+  nameWithType: CustomList<T>.Insert(Int32, T[])
+  fullName: CustomListClass.CustomList<T>.Insert(System.Int32, T[])
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Insert
+    path: CustomList.cs
+    startLine: 548
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void Insert(int index, T[] item)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: item
+      type: '{T}[]'
+    content.vb: Public Sub Insert(index As Integer, item As T())
+  overload: CustomListClass.CustomList`1.Insert*
+  nameWithType.vb: CustomList(Of T).Insert(Int32, T())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Insert(System.Int32, T())
+  name.vb: Insert(Int32, T())
+- uid: CustomListClass.CustomList`1.Insert(System.Int32,CustomListClass.CustomList{`0})
+  commentId: M:CustomListClass.CustomList`1.Insert(System.Int32,CustomListClass.CustomList{`0})
+  id: Insert(System.Int32,CustomListClass.CustomList{`0})
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(Int32, CustomList<T>)
+  nameWithType: CustomList<T>.Insert(Int32, CustomList<T>)
+  fullName: CustomListClass.CustomList<T>.Insert(System.Int32, CustomListClass.CustomList<T>)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Insert
+    path: CustomList.cs
+    startLine: 563
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void Insert(int index, CustomList<T> listB)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: listB
+      type: CustomListClass.CustomList`1
+    content.vb: Public Sub Insert(index As Integer, listB As CustomList(Of T))
+  overload: CustomListClass.CustomList`1.Insert*
+  nameWithType.vb: CustomList(Of T).Insert(Int32, CustomList(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Insert(System.Int32, CustomListClass.CustomList(Of T))
+  name.vb: Insert(Int32, CustomList(Of T))
+- uid: CustomListClass.CustomList`1.ShiftItems(System.Int32,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.ShiftItems(System.Int32,System.Int32)
+  id: ShiftItems(System.Int32,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: ShiftItems(Int32, Int32)
+  nameWithType: CustomList<T>.ShiftItems(Int32, Int32)
+  fullName: CustomListClass.CustomList<T>.ShiftItems(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: ShiftItems
+    path: CustomList.cs
+    startLine: 580
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void ShiftItems(int startIndex, int amount)
+    parameters:
+    - id: startIndex
+      type: System.Int32
+    - id: amount
+      type: System.Int32
+    content.vb: Public Sub ShiftItems(startIndex As Integer, amount As Integer)
+  overload: CustomListClass.CustomList`1.ShiftItems*
+  nameWithType.vb: CustomList(Of T).ShiftItems(Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).ShiftItems(System.Int32, System.Int32)
+- uid: CustomListClass.CustomList`1.IncreaseCapacity(System.Int32)
+  commentId: M:CustomListClass.CustomList`1.IncreaseCapacity(System.Int32)
+  id: IncreaseCapacity(System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: IncreaseCapacity(Int32)
+  nameWithType: CustomList<T>.IncreaseCapacity(Int32)
+  fullName: CustomListClass.CustomList<T>.IncreaseCapacity(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: IncreaseCapacity
+    path: CustomList.cs
+    startLine: 607
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void IncreaseCapacity(int newCapacity)
+    parameters:
+    - id: newCapacity
+      type: System.Int32
+    content.vb: Public Sub IncreaseCapacity(newCapacity As Integer)
+  overload: CustomListClass.CustomList`1.IncreaseCapacity*
+  nameWithType.vb: CustomList(Of T).IncreaseCapacity(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).IncreaseCapacity(System.Int32)
+- uid: CustomListClass.CustomList`1.RemoveAt(System.Int32)
+  commentId: M:CustomListClass.CustomList`1.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAt(Int32)
+  nameWithType: CustomList<T>.RemoveAt(Int32)
+  fullName: CustomListClass.CustomList<T>.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: RemoveAt
+    path: CustomList.cs
+    startLine: 620
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void RemoveAt(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub RemoveAt(index As Integer)
+  overload: CustomListClass.CustomList`1.RemoveAt*
+  implements:
+  - System.Collections.Generic.IList{{T}}.RemoveAt(System.Int32)
+  nameWithType.vb: CustomList(Of T).RemoveAt(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).RemoveAt(System.Int32)
+- uid: CustomListClass.CustomList`1.Clear
+  commentId: M:CustomListClass.CustomList`1.Clear
+  id: Clear
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: CustomList<T>.Clear()
+  fullName: CustomListClass.CustomList<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Clear
+    path: CustomList.cs
+    startLine: 633
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: CustomListClass.CustomList`1.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  nameWithType.vb: CustomList(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Clear()
+- uid: CustomListClass.CustomList`1.Contains(`0)
+  commentId: M:CustomListClass.CustomList`1.Contains(`0)
+  id: Contains(`0)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: CustomList<T>.Contains(T)
+  fullName: CustomListClass.CustomList<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: Contains
+    path: CustomList.cs
+    startLine: 642
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public bool Contains(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(item As T) As Boolean
+  overload: CustomListClass.CustomList`1.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  nameWithType.vb: CustomList(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).Contains(T)
+- uid: CustomListClass.CustomList`1.CopyTo(`0[],System.Int32)
+  commentId: M:CustomListClass.CustomList`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], Int32)
+  nameWithType: CustomList<T>.CopyTo(T[], Int32)
+  fullName: CustomListClass.CustomList<T>.CopyTo(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: CopyTo
+    path: CustomList.cs
+    startLine: 648
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: arrayIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer)
+  overload: CustomListClass.CustomList`1.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  nameWithType.vb: CustomList(Of T).CopyTo(T(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+- uid: CustomListClass.CustomList`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  id: CopyTo(System.Int32,`0[],System.Int32,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Int32, T[], Int32, Int32)
+  nameWithType: CustomList<T>.CopyTo(Int32, T[], Int32, Int32)
+  fullName: CustomListClass.CustomList<T>.CopyTo(System.Int32, T[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: CopyTo
+    path: CustomList.cs
+    startLine: 666
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void CopyTo(int index, T[] array, int arrayIndex, int count)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: array
+      type: '{T}[]'
+    - id: arrayIndex
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    content.vb: Public Sub CopyTo(index As Integer, array As T(), arrayIndex As Integer, count As Integer)
+  overload: CustomListClass.CustomList`1.CopyTo*
+  nameWithType.vb: CustomList(Of T).CopyTo(Int32, T(), Int32, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).CopyTo(System.Int32, T(), System.Int32, System.Int32)
+  name.vb: CopyTo(Int32, T(), Int32, Int32)
+- uid: CustomListClass.CustomList`1.CopyTo(System.Array,System.Int32)
+  commentId: M:CustomListClass.CustomList`1.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Array, Int32)
+  nameWithType: CustomList<T>.CopyTo(Array, Int32)
+  fullName: CustomListClass.CustomList<T>.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CustomList/CustomList.cs
+      branch: master
+      repo: https://github.com/tmherron09/CustomListClass.git
+    id: CopyTo
+    path: CustomList.cs
+    startLine: 683
+  assemblies:
+  - CustomListClass
+  namespace: CustomListClass
+  syntax:
+    content: public void CopyTo(Array array, int arrayIndex)
+    parameters:
+    - id: array
+      type: System.Array
+    - id: arrayIndex
+      type: System.Int32
+    content.vb: Public Sub CopyTo(array As Array, arrayIndex As Integer)
+  overload: CustomListClass.CustomList`1.CopyTo*
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  nameWithType.vb: CustomList(Of T).CopyTo(Array, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CustomListClass.CustomList(Of T).CopyTo(System.Array, System.Int32)
+references:
+- uid: CustomListClass
+  commentId: N:CustomListClass
+  name: CustomListClass
+  nameWithType: CustomListClass
+  fullName: CustomListClass
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1
+  commentId: T:CustomListClass.CustomList`1
+  parent: CustomListClass
+  name: CustomList<T>
+  nameWithType: CustomList<T>
+  fullName: CustomListClass.CustomList<T>
+  nameWithType.vb: CustomList(Of T)
+  fullName.vb: CustomListClass.CustomList(Of T)
+  name.vb: CustomList(Of T)
+  spec.csharp:
+  - uid: CustomListClass.CustomList`1
+    name: CustomList
+    nameWithType: CustomList
+    fullName: CustomListClass.CustomList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: CustomListClass.CustomList`1
+    name: CustomList
+    nameWithType: CustomList
+    fullName: CustomListClass.CustomList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Count*
+  commentId: Overload:CustomListClass.CustomList`1.Count
+  name: Count
+  nameWithType: CustomList<T>.Count
+  fullName: CustomListClass.CustomList<T>.Count
+  nameWithType.vb: CustomList(Of T).Count
+  fullName.vb: CustomListClass.CustomList(Of T).Count
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection{`0}.Count
+  parent: System.Collections.Generic.IReadOnlyCollection{{T}}
+  definition: System.Collections.Generic.IReadOnlyCollection`1.Count
+  name: Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: System.Collections.ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: Count
+  nameWithType: ICollection.Count
+  fullName: System.Collections.ICollection.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.IReadOnlyCollection`1.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: CustomListClass.CustomList`1.Capacity*
+  commentId: Overload:CustomListClass.CustomList`1.Capacity
+  name: Capacity
+  nameWithType: CustomList<T>.Capacity
+  fullName: CustomListClass.CustomList<T>.Capacity
+  nameWithType.vb: CustomList(Of T).Capacity
+  fullName.vb: CustomListClass.CustomList(Of T).Capacity
+- uid: CustomListClass.CustomList`1.IndexOfLast*
+  commentId: Overload:CustomListClass.CustomList`1.IndexOfLast
+  name: IndexOfLast
+  nameWithType: CustomList<T>.IndexOfLast
+  fullName: CustomListClass.CustomList<T>.IndexOfLast
+  nameWithType.vb: CustomList(Of T).IndexOfLast
+  fullName.vb: CustomListClass.CustomList(Of T).IndexOfLast
+- uid: CustomListClass.CustomList`1.IsReadOnly*
+  commentId: Overload:CustomListClass.CustomList`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: CustomList<T>.IsReadOnly
+  fullName: CustomListClass.CustomList<T>.IsReadOnly
+  nameWithType.vb: CustomList(Of T).IsReadOnly
+  fullName.vb: CustomListClass.CustomList(Of T).IsReadOnly
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: CustomListClass.CustomList`1.IsSynchronized*
+  commentId: Overload:CustomListClass.CustomList`1.IsSynchronized
+  name: IsSynchronized
+  nameWithType: CustomList<T>.IsSynchronized
+  fullName: CustomListClass.CustomList<T>.IsSynchronized
+  nameWithType.vb: CustomList(Of T).IsSynchronized
+  fullName.vb: CustomListClass.CustomList(Of T).IsSynchronized
+- uid: System.Collections.ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  fullName: System.Collections.ICollection.IsSynchronized
+- uid: CustomListClass.CustomList`1.SyncRoot*
+  commentId: Overload:CustomListClass.CustomList`1.SyncRoot
+  name: SyncRoot
+  nameWithType: CustomList<T>.SyncRoot
+  fullName: CustomListClass.CustomList<T>.SyncRoot
+  nameWithType.vb: CustomList(Of T).SyncRoot
+  fullName.vb: CustomListClass.CustomList(Of T).SyncRoot
+- uid: System.Collections.ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: SyncRoot
+  nameWithType: ICollection.SyncRoot
+  fullName: System.Collections.ICollection.SyncRoot
+- uid: CustomListClass.CustomList`1.Item*
+  commentId: Overload:CustomListClass.CustomList`1.Item
+  name: Item
+  nameWithType: CustomList<T>.Item
+  fullName: CustomListClass.CustomList<T>.Item
+  nameWithType.vb: CustomList(Of T).Item
+  fullName.vb: CustomListClass.CustomList(Of T).Item
+- uid: System.Collections.Generic.IList{{T}}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList{`0}.Item(System.Int32)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: IList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IList<T>.Item[System.Int32]
+  nameWithType.vb: IList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList<T>.Item
+    fullName: System.Collections.Generic.IList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList(Of T).Item
+    fullName: System.Collections.Generic.IList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList{{T}}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList{`0}.Item(System.Int32)
+  parent: System.Collections.Generic.IReadOnlyList{{T}}
+  definition: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: IReadOnlyList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  nameWithType.vb: IReadOnlyList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList<T>.Item
+    fullName: System.Collections.Generic.IReadOnlyList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList(Of T).Item
+    fullName: System.Collections.Generic.IReadOnlyList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IList`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: IList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IList<T>.Item[System.Int32]
+  nameWithType.vb: IList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList<T>.Item
+    fullName: System.Collections.Generic.IList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IList(Of T).Item
+    fullName: System.Collections.Generic.IList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: IReadOnlyList<T>.Item[Int32]
+  fullName: System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  nameWithType.vb: IReadOnlyList(Of T).Item(Int32)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList<T>.Item
+    fullName: System.Collections.Generic.IReadOnlyList<T>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: Item
+    nameWithType: IReadOnlyList(Of T).Item
+    fullName: System.Collections.Generic.IReadOnlyList(Of T).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: CustomListClass.CustomList`1.#ctor*
+  commentId: Overload:CustomListClass.CustomList`1.#ctor
+  name: CustomList
+  nameWithType: CustomList<T>.CustomList
+  fullName: CustomListClass.CustomList<T>.CustomList
+  nameWithType.vb: CustomList(Of T).CustomList
+  fullName.vb: CustomListClass.CustomList(Of T).CustomList
+- uid: CustomListClass.CustomList`1.Add*
+  commentId: Overload:CustomListClass.CustomList`1.Add
+  name: Add
+  nameWithType: CustomList<T>.Add
+  fullName: CustomListClass.CustomList<T>.Add
+  nameWithType.vb: CustomList(Of T).Add
+  fullName.vb: CustomListClass.CustomList(Of T).Add
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Remove*
+  commentId: Overload:CustomListClass.CustomList`1.Remove
+  name: Remove
+  nameWithType: CustomList<T>.Remove
+  fullName: CustomListClass.CustomList<T>.Remove
+  nameWithType.vb: CustomList(Of T).Remove
+  fullName.vb: CustomListClass.CustomList(Of T).Remove
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Zip*
+  commentId: Overload:CustomListClass.CustomList`1.Zip
+  name: Zip
+  nameWithType: CustomList<T>.Zip
+  fullName: CustomListClass.CustomList<T>.Zip
+  nameWithType.vb: CustomList(Of T).Zip
+  fullName.vb: CustomListClass.CustomList(Of T).Zip
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.ToString*
+  commentId: Overload:CustomListClass.CustomList`1.ToString
+  name: ToString
+  nameWithType: CustomList<T>.ToString
+  fullName: CustomListClass.CustomList<T>.ToString
+  nameWithType.vb: CustomList(Of T).ToString
+  fullName.vb: CustomListClass.CustomList(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CustomListClass.CustomList`1.op_Addition*
+  commentId: Overload:CustomListClass.CustomList`1.op_Addition
+  name: Addition
+  nameWithType: CustomList<T>.Addition
+  fullName: CustomListClass.CustomList<T>.Addition
+  nameWithType.vb: CustomList(Of T).Addition
+  fullName.vb: CustomListClass.CustomList(Of T).Addition
+- uid: CustomListClass.CustomList`1.op_Subtraction*
+  commentId: Overload:CustomListClass.CustomList`1.op_Subtraction
+  name: Subtraction
+  nameWithType: CustomList<T>.Subtraction
+  fullName: CustomListClass.CustomList<T>.Subtraction
+  nameWithType.vb: CustomList(Of T).Subtraction
+  fullName.vb: CustomListClass.CustomList(Of T).Subtraction
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Equals*
+  commentId: Overload:CustomListClass.CustomList`1.Equals
+  name: Equals
+  nameWithType: CustomList<T>.Equals
+  fullName: CustomListClass.CustomList<T>.Equals
+  nameWithType.vb: CustomList(Of T).Equals
+  fullName.vb: CustomListClass.CustomList(Of T).Equals
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.GetHashCode*
+  commentId: Overload:CustomListClass.CustomList`1.GetHashCode
+  name: GetHashCode
+  nameWithType: CustomList<T>.GetHashCode
+  fullName: CustomListClass.CustomList<T>.GetHashCode
+  nameWithType.vb: CustomList(Of T).GetHashCode
+  fullName.vb: CustomListClass.CustomList(Of T).GetHashCode
+- uid: CustomListClass.CustomList`1.GetEnumerator*
+  commentId: Overload:CustomListClass.CustomList`1.GetEnumerator
+  name: GetEnumerator
+  nameWithType: CustomList<T>.GetEnumerator
+  fullName: CustomListClass.CustomList<T>.GetEnumerator
+  nameWithType.vb: CustomList(Of T).GetEnumerator
+  fullName.vb: CustomListClass.CustomList(Of T).GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*
+  commentId: Overload:CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  name: IEnumerable<T>.GetEnumerator
+  nameWithType: CustomList<T>.IEnumerable<T>.GetEnumerator
+  fullName: CustomListClass.CustomList<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  nameWithType.vb: CustomList(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  fullName.vb: CustomListClass.CustomList(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.MoveNext*
+  commentId: Overload:CustomListClass.CustomList`1.MoveNext
+  name: MoveNext
+  nameWithType: CustomList<T>.MoveNext
+  fullName: CustomListClass.CustomList<T>.MoveNext
+  nameWithType.vb: CustomList(Of T).MoveNext
+  fullName.vb: CustomListClass.CustomList(Of T).MoveNext
+- uid: System.Collections.IEnumerator.MoveNext
+  commentId: M:System.Collections.IEnumerator.MoveNext
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: MoveNext()
+  nameWithType: IEnumerator.MoveNext()
+  fullName: System.Collections.IEnumerator.MoveNext()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    nameWithType: IEnumerator.MoveNext
+    fullName: System.Collections.IEnumerator.MoveNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: MoveNext
+    nameWithType: IEnumerator.MoveNext
+    fullName: System.Collections.IEnumerator.MoveNext
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Reset*
+  commentId: Overload:CustomListClass.CustomList`1.Reset
+  name: Reset
+  nameWithType: CustomList<T>.Reset
+  fullName: CustomListClass.CustomList<T>.Reset
+  nameWithType.vb: CustomList(Of T).Reset
+  fullName.vb: CustomListClass.CustomList(Of T).Reset
+- uid: System.Collections.IEnumerator.Reset
+  commentId: M:System.Collections.IEnumerator.Reset
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: Reset()
+  nameWithType: IEnumerator.Reset()
+  fullName: System.Collections.IEnumerator.Reset()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    nameWithType: IEnumerator.Reset
+    fullName: System.Collections.IEnumerator.Reset
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.Reset
+    name: Reset
+    nameWithType: IEnumerator.Reset
+    fullName: System.Collections.IEnumerator.Reset
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Current*
+  commentId: Overload:CustomListClass.CustomList`1.Current
+  name: Current
+  nameWithType: CustomList<T>.Current
+  fullName: CustomListClass.CustomList<T>.Current
+  nameWithType.vb: CustomList(Of T).Current
+  fullName.vb: CustomListClass.CustomList(Of T).Current
+- uid: System.Collections.IEnumerator.Current
+  commentId: P:System.Collections.IEnumerator.Current
+  parent: System.Collections.IEnumerator
+  isExternal: true
+  name: Current
+  nameWithType: IEnumerator.Current
+  fullName: System.Collections.IEnumerator.Current
+- uid: CustomListClass.CustomList`1.Sort*
+  commentId: Overload:CustomListClass.CustomList`1.Sort
+  name: Sort
+  nameWithType: CustomList<T>.Sort
+  fullName: CustomListClass.CustomList<T>.Sort
+  nameWithType.vb: CustomList(Of T).Sort
+  fullName.vb: CustomListClass.CustomList(Of T).Sort
+- uid: CustomListClass.CustomList`1.QuickSort*
+  commentId: Overload:CustomListClass.CustomList`1.QuickSort
+  name: QuickSort
+  nameWithType: CustomList<T>.QuickSort
+  fullName: CustomListClass.CustomList<T>.QuickSort
+  nameWithType.vb: CustomList(Of T).QuickSort
+  fullName.vb: CustomListClass.CustomList(Of T).QuickSort
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: CustomListClass.CustomList`1.Partition*
+  commentId: Overload:CustomListClass.CustomList`1.Partition
+  name: Partition
+  nameWithType: CustomList<T>.Partition
+  fullName: CustomListClass.CustomList<T>.Partition
+  nameWithType.vb: CustomList(Of T).Partition
+  fullName.vb: CustomListClass.CustomList(Of T).Partition
+- uid: CustomListClass.CustomList`1.BubbleSort*
+  commentId: Overload:CustomListClass.CustomList`1.BubbleSort
+  name: BubbleSort
+  nameWithType: CustomList<T>.BubbleSort
+  fullName: CustomListClass.CustomList<T>.BubbleSort
+  nameWithType.vb: CustomList(Of T).BubbleSort
+  fullName.vb: CustomListClass.CustomList(Of T).BubbleSort
+- uid: CustomListClass.CustomList`1.MergeSort*
+  commentId: Overload:CustomListClass.CustomList`1.MergeSort
+  name: MergeSort
+  nameWithType: CustomList<T>.MergeSort
+  fullName: CustomListClass.CustomList<T>.MergeSort
+  nameWithType.vb: CustomList(Of T).MergeSort
+  fullName.vb: CustomListClass.CustomList(Of T).MergeSort
+- uid: CustomListClass.CustomList`1.MergeSorMethod*
+  commentId: Overload:CustomListClass.CustomList`1.MergeSorMethod
+  name: MergeSorMethod
+  nameWithType: CustomList<T>.MergeSorMethod
+  fullName: CustomListClass.CustomList<T>.MergeSorMethod
+  nameWithType.vb: CustomList(Of T).MergeSorMethod
+  fullName.vb: CustomListClass.CustomList(Of T).MergeSorMethod
+- uid: CustomListClass.CustomList`1.MergeArrays*
+  commentId: Overload:CustomListClass.CustomList`1.MergeArrays
+  name: MergeArrays
+  nameWithType: CustomList<T>.MergeArrays
+  fullName: CustomListClass.CustomList<T>.MergeArrays
+  nameWithType.vb: CustomList(Of T).MergeArrays
+  fullName.vb: CustomListClass.CustomList(Of T).MergeArrays
+- uid: CustomListClass.CustomList`1.IndexOf*
+  commentId: Overload:CustomListClass.CustomList`1.IndexOf
+  name: IndexOf
+  nameWithType: CustomList<T>.IndexOf
+  fullName: CustomListClass.CustomList<T>.IndexOf
+  nameWithType.vb: CustomList(Of T).IndexOf
+  fullName.vb: CustomListClass.CustomList(Of T).IndexOf
+- uid: System.Collections.Generic.IList{{T}}.IndexOf({T})
+  commentId: M:System.Collections.Generic.IList{`0}.IndexOf(`0)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.IndexOf(`0)
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList<T>.IndexOf
+    fullName: System.Collections.Generic.IList<T>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList(Of T).IndexOf
+    fullName: System.Collections.Generic.IList(Of T).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1.IndexOf(`0)
+  commentId: M:System.Collections.Generic.IList`1.IndexOf(`0)
+  isExternal: true
+  name: IndexOf(T)
+  nameWithType: IList<T>.IndexOf(T)
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  fullName.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList<T>.IndexOf
+    fullName: System.Collections.Generic.IList<T>.IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: IndexOf
+    nameWithType: IList(Of T).IndexOf
+    fullName: System.Collections.Generic.IList(Of T).IndexOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.GetLowerBounds*
+  commentId: Overload:CustomListClass.CustomList`1.GetLowerBounds
+  name: GetLowerBounds
+  nameWithType: CustomList<T>.GetLowerBounds
+  fullName: CustomListClass.CustomList<T>.GetLowerBounds
+  nameWithType.vb: CustomList(Of T).GetLowerBounds
+  fullName.vb: CustomListClass.CustomList(Of T).GetLowerBounds
+- uid: CustomListClass.CustomList`1.GetUpperBounds*
+  commentId: Overload:CustomListClass.CustomList`1.GetUpperBounds
+  name: GetUpperBounds
+  nameWithType: CustomList<T>.GetUpperBounds
+  fullName: CustomListClass.CustomList<T>.GetUpperBounds
+  nameWithType.vb: CustomList(Of T).GetUpperBounds
+  fullName.vb: CustomListClass.CustomList(Of T).GetUpperBounds
+- uid: CustomListClass.CustomList`1.Insert*
+  commentId: Overload:CustomListClass.CustomList`1.Insert
+  name: Insert
+  nameWithType: CustomList<T>.Insert
+  fullName: CustomListClass.CustomList<T>.Insert
+  nameWithType.vb: CustomList(Of T).Insert
+  fullName.vb: CustomListClass.CustomList(Of T).Insert
+- uid: System.Collections.Generic.IList{{T}}.Insert(System.Int32,{T})
+  commentId: M:System.Collections.Generic.IList{`0}.Insert(System.Int32,`0)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  name: Insert(Int32, T)
+  nameWithType: IList<T>.Insert(Int32, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  nameWithType.vb: IList(Of T).Insert(Int32, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList<T>.Insert
+    fullName: System.Collections.Generic.IList<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList(Of T).Insert
+    fullName: System.Collections.Generic.IList(Of T).Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  commentId: M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  isExternal: true
+  name: Insert(Int32, T)
+  nameWithType: IList<T>.Insert(Int32, T)
+  fullName: System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  nameWithType.vb: IList(Of T).Insert(Int32, T)
+  fullName.vb: System.Collections.Generic.IList(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList<T>.Insert
+    fullName: System.Collections.Generic.IList<T>.Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: Insert
+    nameWithType: IList(Of T).Insert
+    fullName: System.Collections.Generic.IList(Of T).Insert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.ShiftItems*
+  commentId: Overload:CustomListClass.CustomList`1.ShiftItems
+  name: ShiftItems
+  nameWithType: CustomList<T>.ShiftItems
+  fullName: CustomListClass.CustomList<T>.ShiftItems
+  nameWithType.vb: CustomList(Of T).ShiftItems
+  fullName.vb: CustomListClass.CustomList(Of T).ShiftItems
+- uid: CustomListClass.CustomList`1.IncreaseCapacity*
+  commentId: Overload:CustomListClass.CustomList`1.IncreaseCapacity
+  name: IncreaseCapacity
+  nameWithType: CustomList<T>.IncreaseCapacity
+  fullName: CustomListClass.CustomList<T>.IncreaseCapacity
+  nameWithType.vb: CustomList(Of T).IncreaseCapacity
+  fullName.vb: CustomListClass.CustomList(Of T).IncreaseCapacity
+- uid: CustomListClass.CustomList`1.RemoveAt*
+  commentId: Overload:CustomListClass.CustomList`1.RemoveAt
+  name: RemoveAt
+  nameWithType: CustomList<T>.RemoveAt
+  fullName: CustomListClass.CustomList<T>.RemoveAt
+  nameWithType.vb: CustomList(Of T).RemoveAt
+  fullName.vb: CustomListClass.CustomList(Of T).RemoveAt
+- uid: System.Collections.Generic.IList{{T}}.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList{`0}.RemoveAt(System.Int32)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  nameWithType: IList<T>.RemoveAt(Int32)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  nameWithType.vb: IList(Of T).RemoveAt(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList<T>.RemoveAt
+    fullName: System.Collections.Generic.IList<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList(Of T).RemoveAt
+    fullName: System.Collections.Generic.IList(Of T).RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  isExternal: true
+  name: RemoveAt(Int32)
+  nameWithType: IList<T>.RemoveAt(Int32)
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  nameWithType.vb: IList(Of T).RemoveAt(Int32)
+  fullName.vb: System.Collections.Generic.IList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList<T>.RemoveAt
+    fullName: System.Collections.Generic.IList<T>.RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: IList(Of T).RemoveAt
+    fullName: System.Collections.Generic.IList(Of T).RemoveAt
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Clear*
+  commentId: Overload:CustomListClass.CustomList`1.Clear
+  name: Clear
+  nameWithType: CustomList<T>.Clear
+  fullName: CustomListClass.CustomList<T>.Clear
+  nameWithType.vb: CustomList(Of T).Clear
+  fullName.vb: CustomListClass.CustomList(Of T).Clear
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.Contains*
+  commentId: Overload:CustomListClass.CustomList`1.Contains
+  name: Contains
+  nameWithType: CustomList<T>.Contains
+  fullName: CustomListClass.CustomList<T>.Contains
+  nameWithType.vb: CustomList(Of T).Contains
+  fullName.vb: CustomListClass.CustomList(Of T).Contains
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass.CustomList`1.CopyTo*
+  commentId: Overload:CustomListClass.CustomList`1.CopyTo
+  name: CopyTo
+  nameWithType: CustomList<T>.CopyTo
+  fullName: CustomListClass.CustomList<T>.CopyTo
+  nameWithType.vb: CustomList(Of T).CopyTo
+  fullName.vb: CustomListClass.CustomList(Of T).CopyTo
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: CopyTo(Array, Int32)
+  nameWithType: ICollection.CopyTo(Array, Int32)
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    nameWithType: ICollection.CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: CopyTo
+    nameWithType: ICollection.CopyTo
+    fullName: System.Collections.ICollection.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Array
+    name: Array
+    nameWithType: Array
+    fullName: System.Array
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  name: Array
+  nameWithType: Array
+  fullName: System.Array

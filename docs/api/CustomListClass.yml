@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: CustomListClass
+  commentId: N:CustomListClass
+  id: CustomListClass
+  children:
+  - CustomListClass.CustomList`1
+  langs:
+  - csharp
+  - vb
+  name: CustomListClass
+  nameWithType: CustomListClass
+  fullName: CustomListClass
+  type: Namespace
+  assemblies:
+  - CustomListClass
+references:
+- uid: CustomListClass.CustomList`1
+  commentId: T:CustomListClass.CustomList`1
+  parent: CustomListClass
+  name: CustomList<T>
+  nameWithType: CustomList<T>
+  fullName: CustomListClass.CustomList<T>
+  nameWithType.vb: CustomList(Of T)
+  fullName.vb: CustomListClass.CustomList(Of T)
+  name.vb: CustomList(Of T)
+  spec.csharp:
+  - uid: CustomListClass.CustomList`1
+    name: CustomList
+    nameWithType: CustomList
+    fullName: CustomListClass.CustomList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: CustomListClass.CustomList`1
+    name: CustomList
+    nameWithType: CustomList
+    fullName: CustomListClass.CustomList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CustomListClass
+  commentId: N:CustomListClass
+  name: CustomListClass
+  nameWithType: CustomListClass
+  fullName: CustomListClass

@@ -1,0 +1,1883 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CustomList&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CustomList&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CustomListClass.CustomList`1">
+  
+  
+  <h1 id="CustomListClass_CustomList_1" data-uid="CustomListClass.CustomList`1" class="text-break">Class CustomList&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Custom List class of Type Generic</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CustomList&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.IEnumerator</span></div>
+    <div><span class="xref">System.Collections.Generic.IList</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CustomListClass.html">CustomListClass</a></h6>
+  <h6><strong>Assembly</strong>: CustomListClass.dll</h6>
+  <h5 id="CustomListClass_CustomList_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CustomList&lt;T&gt; : IEnumerator, IList&lt;T&gt;, ICollection&lt;T&gt;, IReadOnlyList&lt;T&gt;, IReadOnlyCollection&lt;T&gt;, IEnumerable&lt;T&gt;, ICollection, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of Item in CustomList</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1__ctor.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L112">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1__ctor_" data-uid="CustomListClass.CustomList`1.#ctor*"></a>
+  <h4 id="CustomListClass_CustomList_1__ctor" data-uid="CustomListClass.CustomList`1.#ctor">CustomList()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L121">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1__ctor_" data-uid="CustomListClass.CustomList`1.#ctor*"></a>
+  <h4 id="CustomListClass_CustomList_1__ctor_System_Int32_" data-uid="CustomListClass.CustomList`1.#ctor(System.Int32)">CustomList(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> Class that is empty and has specified starting capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomList(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>Value to initialize capacity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Capacity.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Capacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L42">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Capacity_" data-uid="CustomListClass.CustomList`1.Capacity*"></a>
+  <h4 id="CustomListClass_CustomList_1_Capacity" data-uid="CustomListClass.CustomList`1.Capacity">Capacity</h4>
+  <div class="markdown level1 summary"><p>Publicly accessible length of iternal array elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Count.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L32">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Count_" data-uid="CustomListClass.CustomList`1.Count*"></a>
+  <h4 id="CustomListClass_CustomList_1_Count" data-uid="CustomListClass.CustomList`1.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Public readonly value of numer of items in <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Current.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Current%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L299">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Current_" data-uid="CustomListClass.CustomList`1.Current*"></a>
+  <h4 id="CustomListClass_CustomList_1_Current" data-uid="CustomListClass.CustomList`1.Current">Current</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Current { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_IndexOfLast.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.IndexOfLast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L53">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_IndexOfLast_" data-uid="CustomListClass.CustomList`1.IndexOfLast*"></a>
+  <h4 id="CustomListClass_CustomList_1_IndexOfLast" data-uid="CustomListClass.CustomList`1.IndexOfLast">IndexOfLast</h4>
+  <div class="markdown level1 summary"><p>The index position of the last element in the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOfLast { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_IsReadOnly.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L61">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_IsReadOnly_" data-uid="CustomListClass.CustomList`1.IsReadOnly*"></a>
+  <h4 id="CustomListClass_CustomList_1_IsReadOnly" data-uid="CustomListClass.CustomList`1.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_IsSynchronized.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.IsSynchronized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L69">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_IsSynchronized_" data-uid="CustomListClass.CustomList`1.IsSynchronized*"></a>
+  <h4 id="CustomListClass_CustomList_1_IsSynchronized" data-uid="CustomListClass.CustomList`1.IsSynchronized">IsSynchronized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSynchronized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Item_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L90">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Item_" data-uid="CustomListClass.CustomList`1.Item*"></a>
+  <h4 id="CustomListClass_CustomList_1_Item_System_Int32_" data-uid="CustomListClass.CustomList`1.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int i] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_SyncRoot.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.SyncRoot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L79">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_SyncRoot_" data-uid="CustomListClass.CustomList`1.SyncRoot*"></a>
+  <h4 id="CustomListClass_CustomList_1_SyncRoot" data-uid="CustomListClass.CustomList`1.SyncRoot">SyncRoot</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object SyncRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Add__0_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L130">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Add_" data-uid="CustomListClass.CustomList`1.Add*"></a>
+  <h4 id="CustomListClass_CustomList_1_Add__0_" data-uid="CustomListClass.CustomList`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Method to add a <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> to end of <code data-dev-comment-type="paramref" class="paramref">this</code> inner array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p><a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> to Add to end of inner array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_BubbleSort.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.BubbleSort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L351">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_BubbleSort_" data-uid="CustomListClass.CustomList`1.BubbleSort*"></a>
+  <h4 id="CustomListClass_CustomList_1_BubbleSort" data-uid="CustomListClass.CustomList`1.BubbleSort">BubbleSort()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BubbleSort()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Clear.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L634">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Clear_" data-uid="CustomListClass.CustomList`1.Clear*"></a>
+  <h4 id="CustomListClass_CustomList_1_Clear" data-uid="CustomListClass.CustomList`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Contains__0_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Contains(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L643">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Contains_" data-uid="CustomListClass.CustomList`1.Contains*"></a>
+  <h4 id="CustomListClass_CustomList_1_Contains__0_" data-uid="CustomListClass.CustomList`1.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_CopyTo__0___System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.CopyTo(%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L649">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_CopyTo_" data-uid="CustomListClass.CustomList`1.CopyTo*"></a>
+  <h4 id="CustomListClass_CustomList_1_CopyTo__0___System_Int32_" data-uid="CustomListClass.CustomList`1.CopyTo(`0[],System.Int32)">CopyTo(T[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_CopyTo_System_Array_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.CopyTo(System.Array%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L684">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_CopyTo_" data-uid="CustomListClass.CustomList`1.CopyTo*"></a>
+  <h4 id="CustomListClass_CustomList_1_CopyTo_System_Array_System_Int32_" data-uid="CustomListClass.CustomList`1.CopyTo(System.Array,System.Int32)">CopyTo(Array, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(Array array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Array</span></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_CopyTo_System_Int32__0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.CopyTo(System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L667">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_CopyTo_" data-uid="CustomListClass.CustomList`1.CopyTo*"></a>
+  <h4 id="CustomListClass_CustomList_1_CopyTo_System_Int32__0___System_Int32_System_Int32_" data-uid="CustomListClass.CustomList`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)">CopyTo(Int32, T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(int index, T[] array, int arrayIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Equals_System_Object_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L245">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Equals_" data-uid="CustomListClass.CustomList`1.Equals*"></a>
+  <h4 id="CustomListClass_CustomList_1_Equals_System_Object_" data-uid="CustomListClass.CustomList`1.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified object as a <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> is equal to this instance. Similiar to Enumerable.SequenceEqual as only items in Count are compared and not Capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> to compare with this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the specified <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> items in elements array are equal to at the same indexs of this instance; Else, false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_GetEnumerator.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L279">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_GetEnumerator_" data-uid="CustomListClass.CustomList`1.GetEnumerator*"></a>
+  <h4 id="CustomListClass_CustomList_1_GetEnumerator" data-uid="CustomListClass.CustomList`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_GetHashCode.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L266">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_GetHashCode_" data-uid="CustomListClass.CustomList`1.GetHashCode*"></a>
+  <h4 id="CustomListClass_CustomList_1_GetHashCode" data-uid="CustomListClass.CustomList`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns a HashCode based on the sum of all object HashCodes in inner array, then adds HashCode for inner Array. WIP to make unique hashcode/best practice.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_GetLowerBounds_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.GetLowerBounds(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L516">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_GetLowerBounds_" data-uid="CustomListClass.CustomList`1.GetLowerBounds*"></a>
+  <h4 id="CustomListClass_CustomList_1_GetLowerBounds_System_Int32_" data-uid="CustomListClass.CustomList`1.GetLowerBounds(System.Int32)">GetLowerBounds(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLowerBounds(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_GetUpperBounds_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.GetUpperBounds(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L524">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_GetUpperBounds_" data-uid="CustomListClass.CustomList`1.GetUpperBounds*"></a>
+  <h4 id="CustomListClass_CustomList_1_GetUpperBounds_System_Int32_System_Int32_" data-uid="CustomListClass.CustomList`1.GetUpperBounds(System.Int32,System.Int32)">GetUpperBounds(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUpperBounds(int lowerBounds, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lowerBounds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_IncreaseCapacity_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.IncreaseCapacity(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L608">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_IncreaseCapacity_" data-uid="CustomListClass.CustomList`1.IncreaseCapacity*"></a>
+  <h4 id="CustomListClass_CustomList_1_IncreaseCapacity_System_Int32_" data-uid="CustomListClass.CustomList`1.IncreaseCapacity(System.Int32)">IncreaseCapacity(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IncreaseCapacity(int newCapacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newCapacity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_IndexOf__0_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.IndexOf(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L460">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_IndexOf_" data-uid="CustomListClass.CustomList`1.IndexOf*"></a>
+  <h4 id="CustomListClass_CustomList_1_IndexOf__0_" data-uid="CustomListClass.CustomList`1.IndexOf(`0)">IndexOf(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_IndexOf__0_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.IndexOf(%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L473">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_IndexOf_" data-uid="CustomListClass.CustomList`1.IndexOf*"></a>
+  <h4 id="CustomListClass_CustomList_1_IndexOf__0_System_Int32_" data-uid="CustomListClass.CustomList`1.IndexOf(`0,System.Int32)">IndexOf(T, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int startingIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startingIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_IndexOf__0_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.IndexOf(%600%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L491">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_IndexOf_" data-uid="CustomListClass.CustomList`1.IndexOf*"></a>
+  <h4 id="CustomListClass_CustomList_1_IndexOf__0_System_Int32_System_Int32_" data-uid="CustomListClass.CustomList`1.IndexOf(`0,System.Int32,System.Int32)">IndexOf(T, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item, int startingIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startingIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Insert_System_Int32__0_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Insert(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L535">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Insert_" data-uid="CustomListClass.CustomList`1.Insert*"></a>
+  <h4 id="CustomListClass_CustomList_1_Insert_System_Int32__0_" data-uid="CustomListClass.CustomList`1.Insert(System.Int32,`0)">Insert(Int32, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Insert_System_Int32__0___.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Insert(System.Int32%2C%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L549">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Insert_" data-uid="CustomListClass.CustomList`1.Insert*"></a>
+  <h4 id="CustomListClass_CustomList_1_Insert_System_Int32__0___" data-uid="CustomListClass.CustomList`1.Insert(System.Int32,`0[])">Insert(Int32, T[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, T[] item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Insert_System_Int32_CustomListClass_CustomList__0__.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Insert(System.Int32%2CCustomListClass.CustomList%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L564">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Insert_" data-uid="CustomListClass.CustomList`1.Insert*"></a>
+  <h4 id="CustomListClass_CustomList_1_Insert_System_Int32_CustomListClass_CustomList__0__" data-uid="CustomListClass.CustomList`1.Insert(System.Int32,CustomListClass.CustomList{`0})">Insert(Int32, CustomList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, CustomList&lt;T&gt; listB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><span class="parametername">listB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_MergeArrays__0____0___.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.MergeArrays(%600%5B%5D%2C%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L416">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_MergeArrays_" data-uid="CustomListClass.CustomList`1.MergeArrays*"></a>
+  <h4 id="CustomListClass_CustomList_1_MergeArrays__0____0___" data-uid="CustomListClass.CustomList`1.MergeArrays(`0[],`0[])">MergeArrays(T[], T[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] MergeArrays(T[] xArray, T[] yArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">xArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">yArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_MergeSorMethod__0___System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.MergeSorMethod(%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L377">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_MergeSorMethod_" data-uid="CustomListClass.CustomList`1.MergeSorMethod*"></a>
+  <h4 id="CustomListClass_CustomList_1_MergeSorMethod__0___System_Int32_" data-uid="CustomListClass.CustomList`1.MergeSorMethod(`0[],System.Int32)">MergeSorMethod(T[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] MergeSorMethod(T[] inputArray, int arraySize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">inputArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arraySize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_MergeSort.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.MergeSort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L371">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_MergeSort_" data-uid="CustomListClass.CustomList`1.MergeSort*"></a>
+  <h4 id="CustomListClass_CustomList_1_MergeSort" data-uid="CustomListClass.CustomList`1.MergeSort">MergeSort()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeSort()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_MoveNext.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.MoveNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L288">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_MoveNext_" data-uid="CustomListClass.CustomList`1.MoveNext*"></a>
+  <h4 id="CustomListClass_CustomList_1_MoveNext" data-uid="CustomListClass.CustomList`1.MoveNext">MoveNext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Partition__0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Partition(%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L323">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Partition_" data-uid="CustomListClass.CustomList`1.Partition*"></a>
+  <h4 id="CustomListClass_CustomList_1_Partition__0___System_Int32_System_Int32_" data-uid="CustomListClass.CustomList`1.Partition(`0[],System.Int32,System.Int32)">Partition(T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Partition(T[] array, int start, int end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_QuickSort__0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.QuickSort(%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L312">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_QuickSort_" data-uid="CustomListClass.CustomList`1.QuickSort*"></a>
+  <h4 id="CustomListClass_CustomList_1_QuickSort__0___System_Int32_System_Int32_" data-uid="CustomListClass.CustomList`1.QuickSort(`0[],System.Int32,System.Int32)">QuickSort(T[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QuickSort(T[] array, int start, int end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">end</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Remove__0_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Remove(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L142">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Remove_" data-uid="CustomListClass.CustomList`1.Remove*"></a>
+  <h4 id="CustomListClass_CustomList_1_Remove__0_" data-uid="CustomListClass.CustomList`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>Removes the first T value matching object from the <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the matching object to remove from the instance of <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Return true if an Item&lt;T&gt; with value successfully removed. Returns false if no object with matching value is found within CustomList&lt;T&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L621">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_RemoveAt_" data-uid="CustomListClass.CustomList`1.RemoveAt*"></a>
+  <h4 id="CustomListClass_CustomList_1_RemoveAt_System_Int32_" data-uid="CustomListClass.CustomList`1.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Reset.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L294">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Reset_" data-uid="CustomListClass.CustomList`1.Reset*"></a>
+  <h4 id="CustomListClass_CustomList_1_Reset" data-uid="CustomListClass.CustomList`1.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_ShiftItems_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.ShiftItems(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L581">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_ShiftItems_" data-uid="CustomListClass.CustomList`1.ShiftItems*"></a>
+  <h4 id="CustomListClass_CustomList_1_ShiftItems_System_Int32_System_Int32_" data-uid="CustomListClass.CustomList`1.ShiftItems(System.Int32,System.Int32)">ShiftItems(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShiftItems(int startIndex, int amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Sort.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Sort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L308">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Sort_" data-uid="CustomListClass.CustomList`1.Sort*"></a>
+  <h4 id="CustomListClass_CustomList_1_Sort" data-uid="CustomListClass.CustomList`1.Sort">Sort()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_ToString.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L180">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_ToString_" data-uid="CustomListClass.CustomList`1.ToString*"></a>
+  <h4 id="CustomListClass_CustomList_1_ToString" data-uid="CustomListClass.CustomList`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Converts contents of <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> to string. String format includes $&quot;elements[0], elements[1], elements[3]...&quot; for all items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String of &quot;elements[0], elements[1], elements[3]...&quot;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_Zip_CustomListClass_CustomList__0__.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.Zip(CustomListClass.CustomList%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L157">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_Zip_" data-uid="CustomListClass.CustomList`1.Zip*"></a>
+  <h4 id="CustomListClass_CustomList_1_Zip_CustomListClass_CustomList__0__" data-uid="CustomListClass.CustomList`1.Zip(CustomListClass.CustomList{`0})">Zip(CustomList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Zips together a second <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a>. New <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> will contain <code data-dev-comment-type="paramref" class="paramref">this</code> first item in inner array, proceeded by <code data-dev-comment-type="paramref" class="paramref">listB</code> first item in inner array and repeat until all items have been added to new <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a>. Trailing items will be added to returned <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CustomList&lt;T&gt; Zip(CustomList&lt;T&gt; listB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><span class="parametername">listB</span></td>
+        <td><p><a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> to Zip</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><p>New <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> of <code data-dev-comment-type="paramref" class="paramref">this</code> zipped with <code data-dev-comment-type="paramref" class="paramref">listB</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_op_Addition_CustomListClass_CustomList__0__CustomListClass_CustomList__0__.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.op_Addition(CustomListClass.CustomList%7B%600%7D%2CCustomListClass.CustomList%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L205">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_op_Addition_" data-uid="CustomListClass.CustomList`1.op_Addition*"></a>
+  <h4 id="CustomListClass_CustomList_1_op_Addition_CustomListClass_CustomList__0__CustomListClass_CustomList__0__" data-uid="CustomListClass.CustomList`1.op_Addition(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})">Addition(CustomList&lt;T&gt;, CustomList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Defines + operator overload for adding two <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CustomList&lt;T&gt; operator +(CustomList&lt;T&gt; first, CustomList&lt;T&gt; second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><span class="parametername">first</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><span class="parametername">second</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><p>New <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> of both inner arrays joined.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_op_Subtraction_CustomListClass_CustomList__0__CustomListClass_CustomList__0__.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.op_Subtraction(CustomListClass.CustomList%7B%600%7D%2CCustomListClass.CustomList%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L225">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_op_Subtraction_" data-uid="CustomListClass.CustomList`1.op_Subtraction*"></a>
+  <h4 id="CustomListClass_CustomList_1_op_Subtraction_CustomListClass_CustomList__0__CustomListClass_CustomList__0__" data-uid="CustomListClass.CustomList`1.op_Subtraction(CustomListClass.CustomList{`0},CustomListClass.CustomList{`0})">Subtraction(CustomList&lt;T&gt;, CustomList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Defines - operator overload for subtracting two <a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CustomList&lt;T&gt; operator -(CustomList&lt;T&gt; minuend, CustomList&lt;T&gt; subtrahend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><span class="parametername">minuend</span></td>
+        <td><p><a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> being subtracted from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td><span class="parametername">subtrahend</span></td>
+        <td><p><a class="xref" href="CustomListClass.CustomList-1.html">CustomList&lt;T&gt;</a> to subtract from <code data-dev-comment-type="paramref" class="paramref">minuend</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CustomListClass.CustomList-1.html">CustomList</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1_System_Collections_Generic_IEnumerable_T__GetEnumerator.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601.System%23Collections%23Generic%23IEnumerable%7BT%7D%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L284">View Source</a>
+  </span>
+  <a id="CustomListClass_CustomList_1_System_Collections_Generic_IEnumerable_T__GetEnumerator_" data-uid="CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator*"></a>
+  <h4 id="CustomListClass_CustomList_1_System_Collections_Generic_IEnumerable_T__GetEnumerator" data-uid="CustomListClass.CustomList`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator">IEnumerable&lt;T&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.IEnumerator</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/tmherron09/CustomListClass/new/master/apiSpec/new?filename=CustomListClass_CustomList_1.md&amp;value=---%0Auid%3A%20CustomListClass.CustomList%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/tmherron09/CustomListClass/blob/master/CustomList/CustomList.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

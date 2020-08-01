@@ -1,0 +1,7 @@
+### YamlMime:TableOfContent
+- uid: CustomListClass
+  name: CustomListClass
+  items:
+  - uid: CustomListClass.CustomList`1
+    name: CustomList<T>
+    name.vb: CustomList(Of T)
